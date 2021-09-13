@@ -1,0 +1,125 @@
+body {
+
+    background-color: #E9E9E9;
+    font-family: 'Denk One', sans-serif;
+
+
+}
+
+
+header {
+
+    width: 100%;
+    height: 200px;
+    background-color: #4775EC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+    padding: 0 40px
+    
+}
+
+header nav {
+
+
+font-size: 20px;
+padding: 0 80px;
+margin-right: 200px;
+
+
+     
+}
+
+header nav a {
+
+   text-decoration: none;
+   color: white;
+   padding: 40px ;
+   font-size: 20px;
+ 
+  
+   
+
+}
+
+.link4 {
+
+    border: white solid  2px;
+    padding: 10px 10px;
+    justify-content: space-between;
+    width: 150px;
+    
+}
+
+
+   .wrapper {
+
+     width: 500px;
+     height: 600px;
+     background-color: white;
+     margin-top: 200px;
+     margin-left: 700px;
+     margin-bottom:200px ;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 5px 20px 5px rgba(122,122,122,0.4); 
+    box-shadow: 0px 5px 20px 5px rgba(122,122,122,0.4);
+     
+   }
+
+ .container {
+
+    padding: 60px;
+    color: #656989;
+    font-size: 20px;
+ }
+
+ h2{
+
+    text-align: center;
+    font-size: 40px
+ }
+
+
+
+
+ .linkchat{
+
+   border: cornflowerblue solid 2px;
+   border-radius: 20px ;
+   width: 200px;
+   height: auto;
+   background-color:cornflowerblue;
+   text-align: center;
+   padding: 10px;
+   margin-left: 80px;
+   margin-top: 60px;
+ 
+   
+ }
+
+
+ main a{
+
+   text-decoration: none;
+   color: white ;
+  
+ }
+ footer {
+
+    width: 100%;
+    height: 200px;
+    background-color: #4775EC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+
+ }

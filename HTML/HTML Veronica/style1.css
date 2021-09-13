@@ -1,0 +1,96 @@
+body {
+    background-color: #E9E9E9;
+    font-family: 'Denk One', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: #4775EC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    padding: 0 40px;
+    
+}
+
+header nav {
+font-size: 20px;
+padding: 0 80px;
+margin-right: 200px;  
+}
+
+header nav a {
+   text-decoration: none;
+   color: white;
+   padding: 40px ;
+   font-size: 20px;
+}
+
+main h2 {
+    text-align: center;
+    color: #4775EC;
+    margin-top: 100px;
+    font-size: 100px;
+}
+
+main .wrapper {
+    width: 500px;
+    height: 900px;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 700px;
+    margin-bottom: 200px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+    box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4)
+}
+
+main .container {
+    padding: 50px;
+    color: #656989;
+    font-size: 20px;
+    text-align: center;
+}
+
+main .wrapper .container h3 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.wrapper .container form {
+    padding: 30px;
+}
+
+.nome {
+    padding: 10px;
+}
+
+.cpf {
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.telefone {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.email {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.senha {
+    padding: 10px;
+}
+
+.senha2 {
+    padding: 10px;
+}
+
