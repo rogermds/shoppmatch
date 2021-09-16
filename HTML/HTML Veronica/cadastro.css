@@ -5,7 +5,7 @@ body {
 
 header {
     width: 100%;
-    height: 200px;
+    height: 150px;
     background-color: #4775EC;
     display: flex;
     justify-content: space-between;
@@ -15,22 +15,31 @@ header {
 header h1 {
     color: white;
     font-size: 40px;
-    padding: 0 40px;
-    
+    padding: 0 40px
 }
 
 header nav {
-font-size: 20px;
-padding: 0 80px;
-margin-right: 200px;  
+    font-size: 20px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 header nav a {
-   text-decoration: none;
-   color: white;
-   padding: 40px ;
-   font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 15px 45px 15px 15px;
 }
+
+header nav a.link4 {
+    border: white solid 2px;
+    padding: 15px;
+    margin: 0;
+    border-radius: 20px;
+}
+
 
 main {
     display: flex;
@@ -103,12 +112,7 @@ main .wrapper .container h3 {
     padding: 10px;
 }
 
-.link4 {
-    border: white solid 2px;
-    padding: 10px 10px;
-    justify-content: space-between;
-    width: 150px;
-}
+
 
 input {
     width: 300px;
@@ -145,20 +149,30 @@ footer {
     height: 200px;
     background-color: #4775EC;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: end;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
 }
 
 footer p {
     color: white;
-    padding: 50px 50px;
-    margin-left: 1500px;
-    margin-top: 10px;
+    font-size: 22px;
+    text-align: center;
+}
+
+footer .social .socialicons {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 footer img {
     width: 50px;
-    height: auto;
-    margin-right: 100px;
-    
+    height: 50px;
+    margin: 0 15px;
 }
