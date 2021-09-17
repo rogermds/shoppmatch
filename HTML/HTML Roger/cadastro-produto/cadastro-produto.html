@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>ShoppMatch - Home</title>
+</head>
+
+<body>
+    <header>
+        <div class='logo'>
+            <h1>ShoppMatch</h1>
+        </div>
+        <div class=navegation>
+            <nav>
+                <a href="#">Vender</a>
+                <a href="#">Cadastrar</a>
+                <a href="#">Entrar</a>
+                <a class="link4" href="#">Anunciar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class='principal'>
+            <div class='compravenda'>
+                <h1>VOCÊ DESEJA?</h1>
+                <form class='escolha'>
+                    <button>COMPRAR</button>
+                    <button>VENDER</button>
+                </form>
+            </div>
+            <div class='categorias'>
+                <h1>QUAL CATEGORIA VOCÊ DESEJA COMPRAR/VENDER?</h1>
+                <div class='escolhacategoria'>
+                    <div class='categoria'>
+                        <img src="../images/cadastro-produto/catroupa.png" alt="">
+                        <h2>ROUPAS E ACESSÓRIOS</h2>
+                    </div>
+                    <div class='categoria'>
+                        <img src="../images/cadastro-produto/catcel.png" alt="">
+                        <h2>TABLETS E CELULARES</h2>
+                    </div>
+                    <div class='categoria'>
+                        <img src="../images/cadastro-produto/catinformatica.png" alt="">
+                        <h2>INFORMÁTICA E TECNOLOGIA</h2>
+                    </div>
+                    <div class='categoria'>
+                        <img src="../images/cadastro-produto/catservicos.png" alt="">
+                        <h2>SERVIÇOS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class=novousado>
+                <h1>O SEU PRODUTO É:</h1>
+                <form class='escolha'>
+                    <button>NOVO</button>
+                    <button>USADO</button>
+                </form>
+            </div>
+            <div class='nomeproduto'>
+                <h1>QUAL O NOME DO PRODUTO/SERVIÇO?</h1>
+                <form class='escolha' action="">
+                    <input type="text">
+                </form>
+            </div>
+            <div class='topicos'>
+                <h1>CRIE O TÓPICO E O ATRIBUTO COMO PREFERIR:</h1>
+                <div class='topicosinput'>
+                    <form action="">
+                        <div>
+                            <input type="text">
+                            <input type="text">
+                        </div>
+                        <div>
+                            <input type="text">
+                            <input type="text">
+                        </div>
+                        <div>
+                            <input type="text">
+                            <input type="text">
+                        </div>
+                        <div class='adicionar'>
+                            <button>+ ADICIONAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class='escolhavalor'>
+                <h1>POR QUAL VALOR VOCÊ DESEJA COMPRAR/VENDER ESTE PRODUTO?</h1>
+                <div class=escolha>
+                    <div class=preco>
+                        <label for="">PREÇO MÍNIMO</label>
+                        <input type="number" placeholder="R$">
+                    </div>
+                    <div class=preco>
+                        <label for="">PREÇO MÁXIMO</label>
+                        <input type="number" placeholder="R$">
+                    </div>
+                </div>
+            </div>
+            <div class='fotodescricao'>
+                <h1>ADICIONE UMA FOTO (OPCIONAL) E DESCRIÇÃO:</h1>
+                <div class='uploadfoto'>
+                    <div class='imgupload'>
+                        <img src="../images/cadastro-produto/uploadimg.png" alt="">
+                        <input type="file">
+                    </div>
+                    <div class='imgdescricao'>
+                        <h1>DESCRIÇÃO:</h1>
+                        <textarea type='text' name='mensagem' id='mensagem' maxlength='256'
+                            placeholder='Mensagem'></textarea>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class='social'>
+            <p>Siga nas redes socias:</p>
+            <div class='socialicons'>
+                <a href="https://www.instagram.com"><img src="./images/icons/instagram.png" alt="instagram" /></a>
+                <a href="https://www.facebook.com"><img src="./images/icons/facebook.png" alt="facebook" /></a>
+                <a href="https://www.youtube.com"><img src="./images/icons/youtube.png" alt="youtube" /></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
