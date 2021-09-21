@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9e9e9;
+  font-family: "Denk One", sans-serif;
+  color: #656989;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  background-color: #4775ec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 40px;
+  padding: 0 40px;
+}
+
+header nav {
+  font-size: 20px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 15px 45px 15px 15px;
+}
+
+header nav a.link4 {
+  border: white solid 2px;
+  padding: 15px;
+  margin: 0;
+  border-radius: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal {
+  display: flex;
+  background-color: white;
+  margin: 5% 0;
+  padding: 3.5%;
+  border-radius: 5%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal .esquerda {
+  width: 50%;
+  margin-right: 5%;
+}
+
+.principal .esquerda .upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.principal .esquerda .upload img,
+p {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin: 3.5% 0;
+  font-size: 18px;
+}
+
+.input input {
+  font-family: "Denk One", sans-serif;
+  width: 95%;
+  border-radius: 5rem;
+  border: 1px solid #656989;
+  padding-left: 0.5rem;
+  color: #656989;
+}
+
+.input label {
+  margin-bottom: 1%;
+}
+
+.novidades {
+  margin-top: 5%;
+  display: flex;
+  width: 100%;
+}
+
+.novidades p {
+  font-size: 12px;
+  text-align: left;
+  width: 20rem;
+}
+
+.novidades input {
+  margin-right: 5%;
+}
+
+.direita {
+  margin-top: 7.75%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.direita .botao {
+  display: flex;
+  justify-content: end;
+  margin-right: 2.5%;
+}
+
+.direita button {
+  background-color: #4775ec;
+  font-family: "Denk One", sans-serif;
+  padding: 2% 5%;
+  border-radius: 10rem;
+  border: none;
+  color: white;
+  justify-self: center;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #4775ec;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+footer .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+footer p {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+footer .social .socialicons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  margin: 0 15px;
+}
