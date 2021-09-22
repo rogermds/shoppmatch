@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9e9e9;
+  font-family: "Denk One", sans-serif;
+  display: unset;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  background-color: #4775ec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 40px;
+  padding: 0 40px;
+}
+
+header nav {
+  font-size: 20px;
+  width: 25%;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+header nav a.link4 {
+  border: white solid 2px;
+  padding: 15px;
+  margin: 0;
+  border-radius: 20px;
+}
+
+header nav a.perfil {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+}
+
+header nav .perfil p {
+  margin-left: 10px;
+}
+
+header .perfil img {
+  width: 60px;
+  height: 60px;
+}
+header .carrinho img {
+  width: 40px;
+  height: 40px;
+}
+
+main .separar {
+  display: flex;
+  justify-content: center;
+  margin: 5% 0;
+}
+main .wrapperboxbranco {
+  display: flex;
+  width: 1200px;
+  height: 600px;
+  background-color: white;
+}
+
+main .wrapperboxbranco .container1 {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+main .wrapperboxbranco .imgcartoescredito img {
+  width: 50px;
+  height: 50px;
+}
+
+main .separar .wrapperboxbranco .container1 .cartoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main .wrapperboxbranco .container1 h2 {
+  text-align: left;
+  color: #656989;
+  font-size: 30px;
+}
+
+main .wrapperboxbranco .container1 .imgcartoescredito {
+  margin: 30px;
+}
+
+main .wrapperboxbranco .container1 .cartoes {
+  width: 100%;
+}
+
+main .wrapperboxbranco .container1 .cartoes div {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+
+main .wrapperboxbranco .container1 .cartoes div label {
+  margin-right: 7.5px;
+}
+
+main .wrapperboxbranco .container2 {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+main .wrapperboxbranco .container2 h3 {
+  color: #656989;
+  font-size: 30px;
+}
+
+main .wrapperboxbranco .container2 img {
+  justify-content: left;
+  width: 50px;
+  height: 50px;
+}
+
+main .wrapperboxbranco .container2 .boleto img {
+  justify-content: left;
+  width: 100px;
+  height: 100px;
+}
+
+main .wrapperboxbranco .container2 .bancos {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #4775ec;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+footer .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+footer p {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+footer .social .socialicons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  margin: 0 15px;
+}

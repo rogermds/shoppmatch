@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9e9e9;
+  font-family: "Denk One", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  background-color: #4775ec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 40px;
+  padding: 0 40px;
+}
+
+header nav {
+  font-size: 20px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 15px 45px 15px 15px;
+}
+
+header nav a.link4 {
+  border: white solid 2px;
+  padding: 15px;
+  margin: 0;
+  border-radius: 20px;
+}
+
+main {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #656989;
+}
+
+main .principal {
+  margin: 10% 15%;
+  background-color: white;
+  border-radius: 50px;
+  padding: 2.5% 0;
+}
+
+main h1 {
+  font-size: 40px;
+  margin: 4% 0;
+}
+
+main .principal .escolha form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main .principal .escolha {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main .principal button,
+input {
+  text-align: center;
+  background: none;
+  border: 1px solid;
+  border-radius: 50px;
+  box-shadow: 0;
+  font-size: 25px;
+  width: 35%;
+  height: 4rem;
+  color: #656989;
+  font-family: "Denk One", sans-serif;
+  transition: 1s;
+}
+
+main .principal button:hover {
+  background: #656989;
+  color: #e9e9e9;
+}
+
+main .principal .escolhacategoria {
+  display: flex;
+  justify-content: space-around;
+}
+
+main .principal .categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main .principal .categorias .escolhacategoria .categoria h2 {
+  margin: 20% 0;
+}
+
+main .principal .novousado .escolha form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main .topicos .topicosinput form {
+  display: flex;
+  flex-direction: column;
+}
+
+main .topicos .topicosinput .adicionar {
+  margin: 1% 0;
+}
+
+main .topicos .topicosinput form div input {
+  margin: 1%;
+  text-align: left;
+  padding-left: 3%;
+}
+
+.escolhavalor .escolha .preco {
+  display: flex;
+  width: 35%;
+  align-items: center;
+}
+
+.escolhavalor .escolha .preco label {
+  font-size: 25px;
+  margin-right: 0.5rem;
+  width: 35%;
+}
+
+.escolhavalor .escolha .preco input {
+  width: 75%;
+  height: 4rem;
+  text-align: left;
+  padding-left: 2.5rem;
+  box-shadow: 0;
+}
+
+.fotodescricao .uploadfoto {
+  display: flex;
+  margin: 5% 10%;
+}
+
+.fotodescricao .uploadfoto .imgupload {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  margin-top: 2.5rem;
+}
+
+.fotodescricao .uploadfoto .imgupload img {
+  width: 75%;
+  align-self: center;
+  margin: 1rem 0;
+}
+
+.fotodescricao .uploadfoto .imgupload input {
+  text-align: center;
+  border: 0;
+  border-radius: 0;
+  font-size: 16px;
+  width: 100%;
+  height: 4rem;
+  color: #656989;
+  font-family: "Denk One", sans-serif;
+}
+
+.fotodescricao .uploadfoto .imgdescricao {
+  text-align: left;
+}
+
+.fotodescricao .uploadfoto .imgdescricao textarea {
+  width: 35rem;
+  height: 15rem;
+  font-size: 25px;
+  border-radius: 2.5rem;
+  padding: 1rem;
+  color: #656989;
+  font-family: "Denk One", sans-serif;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #4775ec;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+footer .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+footer p {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+footer .social .socialicons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  margin: 0 15px;
+}
