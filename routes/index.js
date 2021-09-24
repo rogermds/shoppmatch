@@ -3,35 +3,39 @@ var router = express.Router();
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("home");
+	res.render("home");
 });
 
 router.get("/cadastroproduto", function (req, res, next) {
-  res.render("cadastro-produto");
+	res.render("cadastro-produto");
 });
 
 router.get("/edicaoperfil", function (req, res, next) {
-  res.render("edicao-perfil");
+	res.render("edicao-perfil");
 });
 
 router.get("/cadastrousuario", function (req, res, next) {
-  res.render("cadastro-usuario");
+	res.render("cadastro-usuario");
 });
 
 router.get("/contato", function (req, res, next) {
-  res.render("contato");
+	res.render("contato");
 });
 
 router.get("/login", function (req, res, next) {
-  res.render("login");
+	res.render("login");
 });
 
 router.get("/pagamento", function (req, res, next) {
-  res.render("pagamento", { title: "Express" });
+	res.render("pagamento", { title: "Express" });
 });
 
 router.get("/carrinho", function (req, res, next) {
-  res.render("carrinho");
+	res.render("carrinho");
+});
+
+router.get("/chat", function (req, res, next) {
+	res.render("chat");
 });
 
 module.exports = router;
