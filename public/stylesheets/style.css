@@ -191,45 +191,56 @@ input {
 	width: 50%;
 	height: 4rem;
 	text-align: left;
-	padding-left: 2.5rem;
+	padding: 0 1rem 0 2rem;
 	box-shadow: 0;
-	margin: 2rem;
+	margin: 3rem 0 3rem 1rem;
+}
+
+.fotodescricao {
+	margin-bottom: 2rem;
+}
+
+.fotodescricao h1 {
+	font-size: 2.4rem;
+	margin-bottom: 3rem;
 }
 
 .fotodescricao .uploadfoto {
 	display: flex;
-	margin: 5% 10%;
+	align-items: center;
+	justify-content: ;
 }
 
 .fotodescricao .uploadfoto .imgupload {
 	display: flex;
 	flex-direction: column;
-	margin-right: 10%;
-	margin-top: 2.5rem;
+	margin-top: 3rem;
 }
 
 .fotodescricao .uploadfoto .imgupload img {
-	width: 75%;
 	align-self: center;
-	margin: 1rem 0;
+	width: 35%;
+	height: 35%;
 }
 
 .fotodescricao .uploadfoto .imgupload input {
-	text-align: center;
-	border: 0;
-	border-radius: 0;
-	font-size: 1.6rem;
-	width: 100%;
-	height: 4rem;
+	font-size: 1.4rem;
 	color: #656989;
 	font-family: "Denk One", sans-serif;
+	border: none;
+	border-radius: 0;
 }
 
 .fotodescricao .uploadfoto .imgdescricao {
 	text-align: left;
 }
 
+.fotodescricao .uploadfoto .imgdescricao h1 {
+	font-size: 2.2rem;
+}
+
 .fotodescricao .uploadfoto .imgdescricao textarea {
+	margin-top: 1rem;
 	width: 35rem;
 	height: 15rem;
 	font-size: 1rem;
@@ -237,9 +248,10 @@ input {
 	padding: 1rem;
 	color: #656989;
 	font-family: "Denk One", sans-serif;
+	font-size: 1.8rem;
 }
 
-/* PAGINA */
+/* PAGINA CADASTRO USUARIO */
 
 main .wrapper h2 {
 	text-align: center;
