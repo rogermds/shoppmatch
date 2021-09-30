@@ -1,29 +1,23 @@
 <%- include('./partials/header') %>
 
-<main>
-    <div class="wrapper">
-        <div class="container">
-            <h3>Acessar</h3>
-            <div>
-                <form>
-                    <div class="usuario">
-                        <label for="usuario">Usuario:</label>
-                        <input type="text" name="nome" id="nome">
-                    </div>
-                    <div class="senha">
-                        <label for="senha"> Senha:</label>
-                        <input type="password" name="senha" id="senha">
-                    </div>
-                </form>
-            </div>
-            <div>
-                <a class="link" href="#">Login</a>
-            </div>
-            <div>
-                <a class="link2" href="#"> Esqueceu sua senha? </a>
+    <main>
+        <div class="login">
+            <div class="container">
+                <h3>Acessar</h3>
+                <div>
+                    <form>
+                        <div class="formlogin">
+                            <input type="text" name="nome" id="nome" placeholder="Usuário">
+                            <input type="password" name="senha" id="senha" placeholder="Senha">
+                            <button type="submit">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="recuperacao">
+                    <a href="#"> Esqueceu sua senha? Recupere aqui! </a>
+                </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
 
-<%- include('./partials/footer') %>
+    <%- include('./partials/footer') %>

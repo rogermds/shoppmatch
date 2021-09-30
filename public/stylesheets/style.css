@@ -13,12 +13,14 @@ html {
 	flex-direction: column;
 	justify-content: center;
 	font-size: 62.5%;
+	max-width: 100%;
 }
 
 body {
 	background-color: #e9e9e9;
 	font-family: "Denk One", sans-serif;
 	font-size: 62.5%;
+	max-width: 100%;
 }
 
 header {
@@ -27,22 +29,23 @@ header {
 	max-width: 100%;
 	color: white;
 	padding: 0 5%;
+	position: sticky;
+	top: 0;
 }
 
 header .wrapper {
-	height: 15vh;
+	height: 11vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 header .wrapper .logo h1 {
-	font-size: 3.8rem;
+	font-size: 3.2rem;
 	padding: 0 40px;
 }
 
 .wrapper navegation nav {
-	font-size: 2rem;
 	margin-right: 50px;
 	display: flex;
 	align-items: center;
@@ -52,15 +55,15 @@ header .wrapper .logo h1 {
 .wrapper nav a {
 	text-decoration: none;
 	color: white;
-	font-size: 2rem;
-	margin: 15px 45px 15px 15px;
+	font-size: 1.8rem;
+	margin: 15px 30px 15px 15px;
 }
 
 .wrapper nav a.anunciar {
 	border: white solid 2px;
-	padding: 15px;
+	padding: 12px;
 	margin: 0;
-	border-radius: 20px;
+	border-radius: 50px;
 }
 
 /* PÁGINA CADASTRO PRODUTO */
@@ -92,7 +95,7 @@ main.cadproduto .principal {
 }
 
 .principal button,
-input {
+.principal input {
 	text-align: center;
 	background: none;
 	border: 1px solid;
@@ -208,19 +211,19 @@ input {
 .fotodescricao .uploadfoto {
 	display: flex;
 	align-items: center;
-	justify-content: ;
 }
 
 .fotodescricao .uploadfoto .imgupload {
 	display: flex;
 	flex-direction: column;
-	margin-top: 3rem;
+	justify-content: center;
 }
 
 .fotodescricao .uploadfoto .imgupload img {
 	align-self: center;
-	width: 35%;
-	height: 35%;
+	margin-top: 3rem;
+	width: 50%;
+	height: 50%;
 }
 
 .fotodescricao .uploadfoto .imgupload input {
@@ -229,10 +232,13 @@ input {
 	font-family: "Denk One", sans-serif;
 	border: none;
 	border-radius: 0;
+	margin: 1rem 0 0 0;
+	width: 100%;
 }
 
 .fotodescricao .uploadfoto .imgdescricao {
 	text-align: left;
+	margin-left: 8rem;
 }
 
 .fotodescricao .uploadfoto .imgdescricao h1 {
@@ -253,77 +259,51 @@ input {
 
 /* PAGINA CADASTRO USUARIO */
 
-main .wrapper h2 {
+main .cadusuario {
+	display: flex;
 	text-align: center;
-	color: #4775ec;
-	margin-top: 100px;
-	font-size: 1rem;
+	justify-content: center;
 }
 
 main .wrapper {
-	width: 500px;
-	height: 900px;
-	margin-bottom: 200px;
+	margin: 10rem 0;
+	display: flex;
+	width: 50%;
 	background-color: white;
 	border-radius: 30px;
 	-webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
 	box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
-}
-
-main .container {
 	padding: 50px;
 	color: #656989;
 	font-size: 2rem;
 	text-align: center;
-	display: flex;
 	flex-direction: column;
 }
 
-main .wrapper .container h3 {
+main .wrapper h3 {
 	font-size: 4rem;
 	text-align: center;
 }
 
-.wrapper .container form {
+.wrapper form {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	padding: 30px;
 	justify-content: center;
 }
 
-.nome {
-	padding: 10px;
-}
-
-.cpf {
-	padding: 10px;
-	margin-right: 15px;
-}
-
-.telefone {
-	padding: 10px;
-	margin-left: 10px;
-}
-
-.email {
-	padding: 10px;
-	margin-left: 10px;
-}
-
-.senha {
-	padding: 10px;
-}
-
-.senha2 {
-	padding: 10px;
-}
-
-input {
-	width: 300px;
-	height: auto;
+.wrapper form .campo {
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	border-radius: 20px;
-	border: solid cornflowerblue 2px;
+	width: 100%;
+	padding: 0 6rem;
+}
+
+.wrapper form campo .input input {
+	margin: 0;
+	width: 100%;
 }
 
 .link {
@@ -352,63 +332,9 @@ input {
 	justify-content: space-between;
 	align-items: center;
 }
-/*Header*/
-.header-main {
-	width: 100%;
-	background: linear-gradient(
-		269.63deg,
-		#4775ec 49.68%,
-		rgba(34, 91, 238, 0.67) 74.69%
-	);
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.header-body .logo {
-	width: 147px;
-	height: 32px;
-}
-.header-body ul {
-	display: flex;
-	align-items: center;
-}
-.header-body li {
-	list-style: none;
-	padding-left: 20px;
-}
-.header-body a {
-	color: #fff;
-	text-decoration: none;
-	cursor: pointer;
-	border-bottom: 3px solid transparent;
-	transition: 300ms;
-}
-.header-body span {
-	margin-top: 90px;
-	margin-left: 20px;
-}
-.profile {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-.profile a {
-	margin-left: 5px;
-}
-.seta {
-	margin-left: 5px;
-}
-.img-profile {
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
-}
-.btn {
-	padding: 10px 7px;
-	border: 2px solid #fff !important;
-	border-radius: 9px;
-}
-/*Card*/
+
+/* PÁGINA */
+
 .card {
 	margin-top: 95px;
 	display: block;
@@ -598,8 +524,8 @@ button.card-btn {
 	cursor: pointer;
 	margin-left: 10px;
 }
-.card-calc-frente input:focus {
-}
+
+/* PÁGINA DE CHAT */
 
 main content {
 	display: flex;
@@ -624,6 +550,14 @@ content .matches .cabecalho h2 {
 	border-left: 1px solid #368dd6;
 	width: 100%;
 	text-align: center;
+	padding: 10px;
+	font-size: 2rem;
+}
+
+content .matches .cabecalho h3 {
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
 	padding: 10px;
 }
 
@@ -652,11 +586,12 @@ content .matches .conversas .contato .imgcontato {
 }
 
 content .matches .conversas .contato img {
-	width: 75%;
+	width: 100%;
+	margin: 0 3rem;
 }
 
-content .matches .conversas .contato .titulocontato {
-	font-size: 1.2rem;
+content .matches .conversas .contato .titulocontato h2 {
+	font-size: 1.6rem;
 }
 
 content .matches .conversas .contato .preconversa {
@@ -664,7 +599,7 @@ content .matches .conversas .contato .preconversa {
 	padding: 15px 15px 15px 0px;
 }
 
-content .principal {
+content .chatprincipal {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
@@ -672,75 +607,73 @@ content .principal {
 	flex-grow: 1;
 }
 
-content .principal .secao h2 {
+content .chatprincipal .secao h2 {
 	text-align: center;
 	border-bottom: 1px solid #368dd6;
 	padding: 10px;
 	font-size: 2.4rem;
 }
 
-content .principal .conversaprincipal {
+content .chatprincipal .conversaprincipal {
 	display: flex;
 	flex-direction: column;
 }
 
-content .principal .conversaprincipal .cabecalho {
+content .chatprincipal .conversaprincipal .cabecalho {
 	display: flex;
 	background-color: rgb(136, 175, 219);
 	color: white;
 	align-items: center;
-	height: 60px;
 }
 
-content .principal .conversaprincipal .cabecalho .leftarrow img {
-	margin-left: 15px;
-	width: 50%;
+content .chatprincipal .conversaprincipal .cabecalho .leftarrow img {
+	margin-left: 2rem;
 	cursor: pointer;
+	width: 55%;
+	height: 55%;
 }
 
-content .principal .conversaprincipal .cabecalho .userimg img {
-	width: 40%;
+content .chatprincipal .conversaprincipal .cabecalho .userimg img {
+	width: 47%;
+	height: 47%;
+	margin-left: 2rem;
 }
 
-content .principal .conversaprincipal .cabecalho .nomeusuario {
+content .chatprincipal .conversaprincipal .cabecalho .nomeusuario {
 	text-align: center;
-	width: 76.5%;
+	width: 100%;
 	align-self: center;
 	justify-content: center;
 	font-size: 2.4rem;
+	text-align: center;
+	padding-right: 10rem;
 }
 
-content .principal .conversaprincipal .cabecalho .nomeusuario {
-	padding-right: 190px;
-}
-
-content .principal .conversaprincipal .conversaatual {
-	height: 32.5rem;
+content .chatprincipal .conversaprincipal .conversaatual {
+	height: 35.5rem;
 	overflow: auto;
 }
 
-content .principal .conversaprincipal .conversaatual .conversa {
+content .chatprincipal .conversaprincipal .conversaatual .conversa {
 	display: flex;
 	flex-direction: column;
 	padding: 0px 20px;
 	margin: 0;
+	font-size: 1.4rem;
 }
 
-content .principal .conversaprincipal .conversaatual div {
-	margin: 7.5px 0;
-}
-
-content .principal .conversaprincipal .conversaatual .cliente {
-	background-color: #9ab2f1;
+content .chatprincipal .conversaprincipal .conversaatual .cliente {
+	background-color: #98abdc;
 	color: white;
 	padding: 10px;
 	border-radius: 20px;
 	align-self: flex-end;
 	text-align: right;
 	max-width: 80%;
+	margin: 7.5px 0;
 }
 
-content .principal .conversaprincipal .conversaatual .usuario {
+content .chatprincipal .conversaprincipal .conversaatual .usuario {
 	background-color: #4775ec;
 	color: white;
 	padding: 10px 20px;
@@ -748,45 +681,48 @@ content .principal .conversaprincipal .conversaatual .usuario {
 	align-self: flex-start;
 	text-align: left;
 	max-width: 80%;
+	margin: 7.5px 0;
 }
 
-content .principal .conversaprincipal .digitando {
+content .chatprincipal .conversaprincipal .digitando {
 	margin: 10px 0;
-	padding-left: 40px;
-	font-size: 1.8rem;
+	padding-left: 35px;
+	font-size: 1.4rem;
 }
 
-content .principal .conversaprincipal .mensagem {
+content .chatprincipal .conversaprincipal .mensagem {
 	margin: 5px 20px;
 }
 
-content .principal .conversaprincipal .mensagem form {
+content .chatprincipal .conversaprincipal .mensagem form {
 	display: flex;
 }
 
-content .principal .conversaprincipal .mensagem input {
+content .chatprincipal .conversaprincipal .mensagem input {
 	border-radius: 20px;
 	border: 1px solid #c4c4c4;
-	padding: 7.5px 0 7.5px 20px;
-	font-size: 1.8rem;
-	width: 95%;
+	font-size: 1.4rem;
 	font-family: "Denk One", sans-serif;
-	margin-bottom: 10px;
+	height: 3.5rem;
+	width: 90%;
+	padding-left: 1.5rem;
 }
 
-content .principal .conversaprincipal .mensagem button {
+content .chatprincipal .conversaprincipal .mensagem button {
 	border: none;
 	background-color: none;
 	color: none;
 	padding: 0;
-	width: 5px;
 	margin: 0 0 7.5px 15px;
+	width: 10%;
+	height: 80%;
 }
 
-content .principal .conversaprincipal .mensagem button img {
+content .chatprincipal .conversaprincipal .mensagem button img {
 	padding: 0;
-	width: 40px;
 	cursor: pointer;
+	width: 70%;
+	height: 70%;
 }
 
 content .dados {
@@ -888,14 +824,6 @@ main a {
 	text-decoration: none;
 	color: white;
 }
-footer {
-	width: 100%;
-	height: 200px;
-	background-color: #4775ec;
-	display: flex;
-	align-items: center;
-	justify-content: end;
-}
 
 .principal {
 	display: flex;
@@ -922,7 +850,7 @@ footer {
 }
 
 .principal .esquerda .upload img,
-p {
+.principal .esquerda .upload p {
 	width: 50%;
 	text-align: center;
 	margin-bottom: 2%;
@@ -933,15 +861,6 @@ p {
 	flex-direction: column;
 	margin: 3.5% 0;
 	font-size: 1.8rem;
-}
-
-.input input {
-	font-family: "Denk One", sans-serif;
-	width: 95%;
-	border-radius: 5rem;
-	border: 1px solid #656989;
-	padding-left: 0.5rem;
-	color: #656989;
 }
 
 .input label {
@@ -987,6 +906,8 @@ p {
 	justify-self: center;
 }
 
+/* PÁGINA HOME */
+
 main .carroselprincipal {
 	display: flex;
 	justify-content: center;
@@ -994,8 +915,8 @@ main .carroselprincipal {
 
 main .carroselprincipal img {
 	margin: 25px 0;
-	width: 1300px;
-	height: 500px;
+	width: 90%;
+	height: 100%;
 }
 
 main .categorias {
@@ -1008,14 +929,20 @@ main .categorias {
 main .categorias h1 {
 	color: #656989;
 	text-align: center;
-	font-size: 1rem;
+	font-size: 4.2rem;
 	margin: 15px 0;
+}
+
+main .categorias .divisaocat {
+	background-color: #4775ec;
+	width: 100px;
+	height: 1px;
 }
 
 main .categorias .imagenscategorias {
 	display: grid;
-	width: 1300px;
-	height: 500px;
+	width: 90%;
+	height: 45rem;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 	row-gap: 5px;
@@ -1023,18 +950,13 @@ main .categorias .imagenscategorias {
 	margin: 20px 0;
 }
 
-main .categorias div.imagenscategorias a {
+main .categorias .imagenscategorias a {
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 	text-decoration: none;
 	color: white;
 	font-size: 2rem;
-}
-
-main .categorias div.imagenscategorias img {
-	width: 100%;
-	height: 100%;
 }
 
 main .categorias .imagenscategorias .imagem1 {
@@ -1092,22 +1014,13 @@ main .produtosrecentes {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 50px;
 }
 
-.divisaocat {
-	background-color: #4775ec;
-	width: 100px;
-	height: 1px;
-}
-
-.divisaoprodrec {
+main .produtosrecentes .divisaoprodrec {
 	background-color: #4775ec;
 	width: 200px;
 	height: 1px;
-}
-
-main .produtosrecentes {
-	margin-bottom: 50px;
 }
 
 main .produtosrecentes h1 {
@@ -1206,111 +1119,187 @@ main .produtosrecentes .imagensprodutos .imgrecente6 {
 
 main .produtosrecentes .imagensprodutos .subtituloimg {
 	background-color: rgb(241, 241, 241);
-	padding: 18px 0;
+	padding: 15px 0;
 	border-radius: 20px;
-}
-
-main .produtosrecentes .imagensprodutos p {
 	font-size: 1.8rem;
-	margin: 2px 0;
-}
-
-.usuario {
-	padding: 10px;
-}
-
-.senha {
-	padding: 10px;
-}
-
-header nav a.perfil {
 	display: flex;
-	margin: 0;
-	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 }
 
-header nav .perfil p {
-	margin-left: 10px;
+main .produtosrecentes .imagensprodutos .subtituloimg p {
+	margin: 5px 0;
 }
 
-header .perfil img {
-	width: 60px;
-	height: 60px;
+/* PÁGINA DE LOGIN */
+
+main .login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-header .carrinho img {
-	width: 40px;
-	height: 40px;
+
+main .login .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	flex-direction: column;
+	width: 25%;
+	height: 100%;
+	margin: 4% 0;
+	border-radius: 50px;
+	font-size: 2rem;
+	color: #656989;
 }
+
+main .login .container h3 {
+	font-size: 3rem;
+	margin: 3rem 0 4rem 0;
+}
+
+main .login .container .formlogin {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main .login .container .formlogin input {
+	margin: 1rem 0;
+	height: 4rem;
+	font-family: "Denk One", sans-serif;
+	text-align: center;
+	width: 20rem;
+	color: #656989;
+	border: 1px solid #afafaf;
+}
+
+main .login .container .formlogin button {
+	margin-top: 1rem;
+	text-align: center;
+	font-family: "Denk One", sans-serif;
+	width: 15rem;
+	background-color: #4775ec;
+	font-size: 2rem;
+	border: none;
+	border-radius: 50px;
+	color: white;
+	padding: 0.7rem 0;
+	margin: 5rem 0;
+}
+
+main .login .container .recuperacao {
+	margin-bottom: 4rem;
+}
+
+main .login .container .recuperacao a {
+	color: #656989;
+	font-size: 1.4rem;
+}
+
+/* PÁGINA DE PAGAMENTO */
 
 main .separar {
 	display: flex;
 	justify-content: center;
 	margin: 5% 0;
 }
+
 main .wrapperboxbranco {
-	display: flex;
-	width: 1200px;
-	height: 600px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.1fr 0.8fr 0.1fr;
+	width: 80%;
 	background-color: white;
+	border-radius: 50px;
+	column-gap: 2rem;
+}
+
+main .wrapperboxbranco .titulo {
+	grid-column: 1/3;
+	grid-row: 1/2;
+	font-size: 4rem;
+	color: #656989;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+}
+
+main .wrapperboxbranco .titulo div {
+	width: 100%;
+	margin: 3rem 0 5rem 0;
 }
 
 main .wrapperboxbranco .container1 {
+	grid-column: 1/2;
+	grid-row: 2/3;
 	display: flex;
 	flex-direction: column;
-	margin: 50px;
-	width: 50%;
+	width: 100%;
 	text-align: center;
 	align-items: center;
 }
 
-main .wrapperboxbranco .imgcartoescredito img {
-	width: 50px;
-	height: 50px;
-}
-
-main .separar .wrapperboxbranco .container1 .cartoes {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-
 main .wrapperboxbranco .container1 h2 {
-	text-align: left;
 	color: #656989;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 main .wrapperboxbranco .container1 .imgcartoescredito {
-	margin: 30px;
+	margin: 2rem 0;
 }
 
-main .wrapperboxbranco .container1 .cartoes {
+main .wrapperboxbranco .container1 .imgcartoescredito img {
+	width: 7rem;
+	height: 7rem;
+	margin: 0 1.5rem;
+}
+
+main .wrapperboxbranco .container1 form.dadosbancarios {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	color: #656989;
+	margin-bottom: 5rem;
+	width: 75%;
+}
+
+main .wrapperboxbranco .container1 form.dadosbancarios div {
+	margin: 0.5rem 0;
+	display: flex;
+	justify-content: space-between;
 	width: 100%;
 }
 
-main .wrapperboxbranco .container1 .cartoes div {
-	margin: 10px 0;
-	display: flex;
-	justify-content: space-between;
-	padding: 0px 50px;
+main .wrapperboxbranco .container1 form.dadosbancarios label {
+	font-size: 1.5rem;
 }
 
-main .wrapperboxbranco .container1 .cartoes div label {
-	margin-right: 7.5px;
+main .wrapperboxbranco .container1 form.dadosbancarios input {
+	width: 50%;
+	font-family: "Denk One", sans-serif;
+	color: #656989;
+	padding-left: 0.5rem;
 }
 
 main .wrapperboxbranco .container2 {
+	grid-column: 2/3;
+	grid-row: 2/3;
 	display: flex;
-	width: 50%;
+	width: 100%;
 	flex-direction: column;
 	text-align: center;
-	justify-content: center;
-	margin: 50px;
+	justify-content: flex-start;
 }
 
-main .wrapperboxbranco .container2 h3 {
+main .wrapperboxbranco .container2 h2 {
 	color: #656989;
-	font-size: 3rem;
+	font-size: 2.4rem;
 }
 
 main .wrapperboxbranco .container2 img {
@@ -1319,10 +1308,31 @@ main .wrapperboxbranco .container2 img {
 	height: 50px;
 }
 
-main .wrapperboxbranco .container2 .boleto img {
+main .wrapperboxbranco .container2 .boleto {
+	margin-bottom: 3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+main .wrapperboxbranco .container2 .divboleto {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main .wrapperboxbranco .container2 .divboleto img {
 	justify-content: left;
 	width: 100px;
 	height: 100px;
+}
+
+main .wrapperboxbranco .container2 .debito {
+	display: flex;
+	flex-direction: column;
+}
+
+main .wrapperboxbranco .container2 .debito h2 {
+	margin-bottom: 3rem;
 }
 
 main .wrapperboxbranco .container2 .bancos {
@@ -1330,28 +1340,81 @@ main .wrapperboxbranco .container2 .bancos {
 	justify-content: space-around;
 }
 
+main .wrapperboxbranco .container2 .bancos div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main .wrapperboxbranco .container2 .bancos div img {
+	margin-right: 2rem;
+}
+
+main .wrapperboxbranco .confirmar {
+	grid-column: 1/3;
+	grid-row: 3/4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main .wrapperboxbranco .confirmar button {
+	width: 15%;
+	height: 5rem;
+	margin-bottom: 4rem;
+	font-family: "Denk One", sans-serif;
+	color: white;
+	background-color: #4775ec;
+	font-size: 2rem;
+	border: none;
+	border-radius: 50px;
+}
+
 /* FOOTER */
 
 footer {
+	color: white;
 	width: 100%;
-	height: 200px;
+	height: 20vh;
 	background-color: #4775ec;
 	display: flex;
 	align-items: center;
-	justify-content: end;
+	justify-content: space-between;
+}
+
+footer .logo {
+	margin-left: 8%;
+}
+
+footer .logo h1 {
+	font-size: 3.2rem;
+}
+
+footer .direitos {
+	display: flex;
+	align-items: flex-end;
+	height: 100%;
+}
+
+footer .direitos p {
+	font-size: 1.4rem;
+	color: #c4c4c4;
+	margin-bottom: 0.5rem;
+	text-align: center;
 }
 
 footer .social {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-right: 50px;
+	margin-right: 7.5%;
 }
 
-footer p {
-	color: white;
-	font-size: 2.2rem;
+footer .social p {
+	font-size: 2rem;
 	text-align: center;
+	width: 100%;
+	margin-bottom: 2rem;
 }
 
 footer .social .socialicons {
@@ -1360,7 +1423,7 @@ footer .social .socialicons {
 }
 
 footer img {
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	margin: 0 15px;
 }

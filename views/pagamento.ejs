@@ -3,67 +3,79 @@
     <main>
         <div class='separar'>
             <div class="wrapperboxbranco">
+                <div class='titulo'>
+                    <div>
+                        <p>Formas de Pagamento</p>
+                    </div>
+                </div>
                 <div class="container1">
                     <div>
-                        <h2>Informe dados de cartão de crédito</h2>
+                        <h2>Informe os dados de cartão de crédito</h2>
                     </div>
                     <div class="imgcartoescredito">
-                        <img src="imagens/visa.png" alt="visa" />
-                        <img src="imagens/mastercard.png" alt="mastercard" />
-                        <img src="imagens/american.png" alt="american" />
-                        <img src="imagens/dinersclub.png" alt="dinersclub" />
-                        <img src="imagens/elo.png" alt="elo" />
+                        <img src="images/pagamento/visa.png" alt="visa" />
+                        <img src="images/pagamento/mastercard.png" alt="mastercard" />
+                        <img src="images/pagamento/american.png" alt="american" />
+                        <img src="images/pagamento/dinersclub.png" alt="dinersclub" />
+                        <img src="images/pagamento/elo.png" alt="elo" />
                     </div>
-                    <form class="cartoes">
-                        <div class="numerodocartao">
+                    <form class="dadosbancarios" method="POST">
+                        <div>
                             <label for="numerodocartao">Numero do cartão:</label>
                             <input type="text" name="numerodocartao" id="numerodocartao" placeholder="Número do cartão">
                         </div>
-                        <div class="nome">
+                        <div>
                             <label for="nome">Nome:</label>
                             <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
                         </div>
-                        <div class="parcelamento">
-                            <label for="parcelas">Parcelamento</label>
+                        <div>
+                            <label for="parcelas">Parcelamento:</label>
                             <input type="number" name="Parcelas" min="1 de x" max="12 de x" placeholder="">
                         </div>
-                        <div class="validade">
+                        <div>
                             <label for="validade">Validade:</label>
                             <input type="date" name="validade" placeholder="Digite a validade">
                         </div>
-                        <div class="codseguranca">
-                            <label for="codseguranca">Código de segurança</label>
+                        <div>
+                            <label for="codseguranca">Código de segurança:</label>
                             <input type="text" name="codseguranca" id="codseguranca" placeholder=" Código de segurança">
                         </div>
                     </form>
                 </div>
                 <div class="container2">
-                    <h3>Boleto</h3>
-                    <form>
-                        <div class="boleto">
-                            <img src="./imagens/Pagamento/boleto.png" alt="boleto" />
-                            <input type="radio" name="boleto" value="">
-                        </div>
-                    </form>
-                    <h3>Débito online</h3>
-                    <form class="bancos">
-                        <div class="bradesco">
-                            <img src="./imagens/Pagamento/bradesco.png" alt="bradesco" />
-                            <input type="radio" name="bradesco" value="">
-                        </div>
-                        <div class="santander">
-                            <img src="./imagens/Pagamento/santander.png" alt="santander" />
-                            <input type="radio" name="santander" value="">
-                        </div>
-                        <div class="itau">
-                            <img src="./imagens/Pagamento/itau.png" alt="itau" />
-                            <input type="radio" name="itau" value="">
-                        </div>
-                        <div class="bancodobrasil">
-                            <img src="./imagens/Pagamento/bancodobrasil.png" alt="bancodobrasil" />
-                            <input type="radio" name="bancodobrasil" value="">
-                        </div>
-                    </form>
+                    <div class='boleto'>
+                        <h2>Boleto bancário</h2>
+                        <form>
+                            <div class="divboleto">
+                                <img src="images/pagamento/boleto.png" alt="boleto" />
+                                <input type="radio" name="boleto" value="">
+                            </div>
+                        </form>
+                    </div>
+                    <div class='debito'>
+                        <h2>Débito online</h2>
+                        <form class="bancos">
+                            <div>
+                                <img src="images/pagamento/bradesco.png" alt="bradesco" />
+                                <input type="radio" name="bradesco" value="">
+                            </div>
+                            <div>
+                                <img src="images/pagamento/santander.png" alt="santander" />
+                                <input type="radio" name="santander" value="">
+                            </div>
+                            <div>
+                                <img src="images/pagamento/itau.png" alt="itau" />
+                                <input type="radio" name="itau" value="">
+                            </div>
+                            <div>
+                                <img src="images/pagamento/bancodobrasil.png" alt="bancodobrasil" />
+                                <input type="radio" name="bancodobrasil" value="">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class='confirmar'>
+                    <button type="submit">Continuar</button>
                 </div>
             </div>
         </div>

@@ -6,12 +6,8 @@ router.get("/", function (req, res, next) {
 	res.render("home");
 });
 
-router.get("/cadastroproduto", function (req, res, next) {
-	res.render("cadastro-produto");
-});
-
-router.get("/edicaoperfil", function (req, res, next) {
-	res.render("edicao-perfil");
+router.get("/login", function (req, res, next) {
+	res.render("login");
 });
 
 router.get("/cadastrousuario", function (req, res, next) {
@@ -20,22 +16,6 @@ router.get("/cadastrousuario", function (req, res, next) {
 
 router.get("/contato", function (req, res, next) {
 	res.render("contato");
-});
-
-router.get("/login", function (req, res, next) {
-	res.render("login");
-});
-
-router.get("/pagamento", function (req, res, next) {
-	res.render("pagamento", { title: "Express" });
-});
-
-router.get("/carrinho", function (req, res, next) {
-	res.render("carrinho");
-});
-
-router.get("/chat", function (req, res, next) {
-	res.render("chat");
 });
 
 module.exports = router;
