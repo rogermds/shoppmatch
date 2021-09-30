@@ -1,56 +1,54 @@
 <%- include('./partials/header') %>
-
-    <section class="container  card">
-        <h2>Carrinho</h2>
-        <div class="card-head">
-            <ul>
-                <li>Produto</li>
-                <li>Quantidade</li>
-                <li>Preço</li>
-            </ul>
-        </div>
-        <div class="card-body">
-            <img src="../images/carrinho/caneca.jpg" alt="produto">
-            <div class="card-info-produto">
-                <h3>Caneca preta</h3>
-                <p>Vendida por joão </p>
+    <main>
+        <div class='carrinho'>
+            <div class="card">
+                <h2>Carrinho</h2>
+                <div class="card-head">
+                    <ul>
+                        <li>Produto</li>
+                        <li>Quantidade</li>
+                        <li>Preço</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <img src="/images/carrinho/caneca.jpg" alt="produto">
+                    <div class="card-info-produto">
+                        <h3>Caneca preta</h3>
+                        <p>Vendida por joão </p>
+                    </div>
+                    <div class="card-info-preco">
+                        <img class="icon-min" src="/images/carrinho/menos.svg">
+                        <span>1</span>
+                        <img class="icon-max" src="/images/carrinho/Mais.svg">
+                    </div>
+                    <span>R$28,99</span>
+                </div>
+                <div class="card-calc-frente">
+                    <h5>Calculando o frente</h5>
+                    <input type="text" placeholder="Digite seu cep">
+                    <button>Calcular</button>
+                </div>
             </div>
-            <div class="card-info-preco">
-                <img class="icon-min" src="../images/carrinho/menos.svg">
-                <span>1</span>
-                <img class="icon-max" src="../images/carrinho/Mais.svg">
+            <div class="card-pagamento">
+                <h3>Carrinho</h3>
+                <div class="card-info-1">
+                    <p>1 produto</p>
+                    <p>R$ 28,99</p>
+                </div>
+                <div class="card-info-2">
+                    <p>Frete</p>
+                    <p>-</p>
+                </div>
+                <div class="row"></div>
+                <div class="card-total">
+                    <span>Total</span>
+                    <p class="card-preco">R$ 28,99</p><br><br>
+                    <p>R$ 28,99 no boleto</p><br>
+                    <p>R$ 28,99 em 10X no cartão </p><br>
+                </div>
+                <button class="card-btn">Confimar</button>
             </div>
-            <span>R$28,99</span>
-
         </div>
-
-        <div class="card-calc-frente">
-            <h5>Calculando o frente</h5>
-            <input type="text" placeholder="Digite seu cep">
-            <button>Calcular</button>
-        </div>
-
-    </section>
-
-
-    <div class="card-pagamento">
-        <h3>Carrinho</h3>
-        <div class="card-info-1">
-            <p>1 produto</p>
-            <p>R$ 28,99</p>
-        </div>
-        <div class="card-info-2">
-            <p>Frete</p>
-            <p>-</p>
-        </div>
-        <div class="row"></div>
-        <div class="card-total">
-            <span>Total</span>
-            <p class="card-preco">R$ 28,99</p><br><br>
-            <p>R$ 28,99 no boleto</p><br>
-            <p>R$ 28,99 em 10X no cartão </p><br>
-        </div>
-        <button class="card-btn">Confimar</button>
-    </div>
+    </main>
 
     <%- include('./partials/footer') %>

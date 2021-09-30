@@ -38,15 +38,14 @@ header .wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 }
 
 header .wrapper .logo h1 {
 	font-size: 3.2rem;
-	padding: 0 40px;
 }
 
 .wrapper navegation nav {
-	margin-right: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -333,150 +332,160 @@ main .wrapper h3 {
 	align-items: center;
 }
 
-/* PÁGINA */
+/* PÁGINA DO CARRINHO */
 
-.card {
-	margin-top: 95px;
-	display: block;
+main .carrinho {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
 }
-.card h2 {
+
+main .carrinho .card {
+	margin-top: 95px;
+}
+main .carrinho .card h2 {
 	font-size: 3.6rem;
 	color: #656989;
 	margin-bottom: 40px;
 }
-.card-head ul {
+main .carrinho .card-head ul {
 	display: flex;
 }
-.card-head li {
+main .carrinho .card-head li {
 	list-style: none;
 }
-.card-head li:nth-child(1) {
+main .carrinho .card-head li:nth-child(1) {
 	margin-right: 330px;
 }
-.card-head li:nth-child(2) {
+main .carrinho .card-head li:nth-child(2) {
 	margin-right: 60px;
 	margin-left: 35px;
 }
-.card-head::after {
+main .carrinho .card-head::after {
 	content: "";
-	display: block;
 	max-width: 650px;
 	height: 1px;
 	background-color: #368dd6;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.card-body {
+main .carrinho .card-body {
 	display: flex;
 	max-width: 650px;
 	margin: 0;
 }
-.card-info-produto {
+main .carrinho .card-info-produto {
 	margin-left: 70px;
 }
-.card-info-produto h3 {
+main .carrinho .card-info-produto h3 {
 	color: rgba(0, 0, 0, 0.51);
 	font-size: 2.4rem;
 	margin-bottom: 20px;
 }
-.card-info-produto p {
+main .carrinho .card-info-produto p {
 	width: 108px;
 	height: 42px;
 	font-size: 1.8rem;
 	text-align: center;
 	color: rgba(0, 0, 0, 0.51);
 }
-.card-info-preco {
+main .carrinho .card-info-preco {
 	background-color: #fff;
 	width: 149px;
 	height: 38px;
 	margin-top: 80px;
 	margin-left: 30px;
 }
-.card-info-preco span {
+
+main .carrinho .card-info-preco span {
 	margin: 0 30px;
 }
-.icon-max {
+
+main .carrinho .icon-max {
 	margin-top: 10px;
 }
-.icon-min {
+main .carrinho .icon-min {
 	margin-left: 10px;
 	margin-bottom: 9px;
 }
 
-.card-calc-frente::before {
+main .carrinho .card-calc-frente::before {
 	content: "";
-	display: block;
 	width: 650px;
 	height: 1px;
 	background-color: #368dd6;
 	margin-top: 20px;
 	margin-bottom: 40px;
 }
-.card-pagamento {
+main .carrinho .card-pagamento {
 	background-color: #fff;
 	max-width: 370px;
 	height: 420px;
-	position: relative;
 	left: 55%;
 	bottom: 99px;
+	font-size: 2rem;
 }
 
-.card-pagamento p {
+main .carrinho .card-pagamento p {
 	color: rgba(0, 0, 0, 0.51);
 }
 
-.card-pagamento h3 {
-	font-size: 18rem;
+main .carrinho .card-pagamento h3 {
+	font-size: 1.8rem;
 	text-align: center;
 	margin-top: 10px;
 	color: rgba(0, 0, 0, 0.51);
 }
 
-.card-pagamento h3::after {
+main .carrinho .card-pagamento h3::after {
 	content: "";
-	display: block;
 	width: 115px;
 	height: 1px;
 	margin: 0 auto;
 	background-color: #368dd6;
 	margin-top: 10px;
 }
-.card-info-1 {
+
+main .carrinho .card-info-1 {
 	padding-top: 50px;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 15px;
 }
-.card-info-2 {
+
+main .carrinho .card-info-2 {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 15px;
 	margin-bottom: 15px;
 }
-.card-pagamento .row::after {
+
+main .carrinho .card-pagamento .row::after {
 	content: "";
-	display: block;
 	width: 350px;
 	height: 1px;
 	background-color: #368dd6;
 	margin: 0 auto;
 }
-.card-total {
-	display: block;
+
+main .carrinho .card-total {
 	padding: 10px 15px;
 }
-.card-total span {
+
+main .carrinho .card-total span {
 	float: left;
 }
-.card-preco {
-	font-size: 1.8rem !important;
+
+main .carrinho .card-preco {
+	font-size: 1.8rem;
 }
-.card-total p {
+
+main .carrinho .card-total p {
 	float: right;
 	font-size: 1.2rem;
 }
-.card-total::after {
+main .carrinho .card-total::after {
 	content: "";
 	display: block;
 	width: 350px;
@@ -484,12 +493,12 @@ main .wrapper h3 {
 	background-color: #368dd6;
 	margin: 0 auto;
 }
-.card-btn {
+main .carrinho .card-btn {
 	width: 315px;
 	height: 45px;
 	margin: 110px auto;
 }
-button.card-btn {
+main .carrinho button.card-btn {
 	display: flex;
 	width: 315px;
 	height: 45px;
@@ -526,7 +535,7 @@ button.card-btn {
 }
 
 /* PÁGINA DE CHAT */
-
+/* FALTA ARRUMAR A CONVERSA */
 main content {
 	display: flex;
 	justify-content: space-between;
@@ -707,6 +716,10 @@ content .chatprincipal .conversaprincipal .mensagem input {
 	width: 90%;
 	padding-left: 1.5rem;
 }
+content .chatprincipal {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
 
 content .chatprincipal .conversaprincipal .mensagem button {
 	border: none;
@@ -729,38 +742,39 @@ content .dados {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
 content .dados .imgvendedor {
 	display: flex;
 	justify-content: center;
-	margin: 10px;
+	align-items: center;
+	width: 100%;
 }
 
 content .dados .imgvendedor img {
-	width: 70%;
+	width: 55%;
+	height: 90%;
 }
 
 content .dados .titulo {
 	margin: 10px;
 	text-align: center;
+	font-size: 1.2rem;
 }
 
 content .dados .info {
 	background-color: #c4c4c4;
 	color: #656989;
-	width: 80%;
+	width: 85%;
 	align-self: center;
 	border-radius: 20px;
 	padding: 20px;
+	font-size: 1.2rem;
 }
 
 content .dados .info .nome {
 	margin-bottom: 15px;
-}
-
-content .dados .info .idade {
-	margin: 15px 0;
 }
 
 content .dados .info .descricao {
@@ -772,17 +786,19 @@ content .dados .info .reputacao {
 	display: flex;
 	background-color: #ebebeb;
 	border-radius: 20px;
-	padding: 15px;
+	padding: 10px;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 content .dados .info .reputacao h2 {
-	font-size: 2.8rem;
-	margin: 0 15px 0 30px;
+	font-size: 1.6rem;
+	margin-right: 1rem;
 }
 
 content .dados .info .reputacao span {
-	font-size: 1.4rem;
-	margin-right: 30px;
+	font-size: 1.2rem;
+	margin-right: 0px;
 }
 
 content .dados .info .detalhes button {
@@ -793,7 +809,7 @@ content .dados .info .detalhes button {
 	width: 100%;
 	border-radius: 20px;
 	font-family: "Denk One", sans-serif;
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	cursor: pointer;
 	transition: 1s;
 }
@@ -1031,8 +1047,8 @@ main .produtosrecentes h1 {
 
 main .produtosrecentes .imagensprodutos {
 	display: grid;
-	width: 800px;
-	height: 600px;
+	width: 90rem;
+	height: 65rem;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	gap: 25px 50px;
@@ -1383,7 +1399,7 @@ footer {
 }
 
 footer .logo {
-	margin-left: 8%;
+	margin-left: 5%;
 }
 
 footer .logo h1 {
@@ -1407,7 +1423,7 @@ footer .social {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-right: 7.5%;
+	margin-right: 5%;
 }
 
 footer .social p {

@@ -1,16 +1,16 @@
 var express = require("express");
 var router = express.Router();
 
-router.get("/cadastroproduto", function (req, res, next) {
+router.get("/produto/cadastrar", function (req, res, next) {
 	res.render("cadastro-produto");
 });
 
-router.get("/edicaoperfil", function (req, res, next) {
+router.get("/perfil/editar", function (req, res, next) {
 	res.render("edicao-perfil");
 });
 
 router.get("/pagamento", function (req, res, next) {
-	res.render("pagamento", { title: "Express" });
+	res.render("pagamento");
 });
 
 router.get("/carrinho", function (req, res, next) {
