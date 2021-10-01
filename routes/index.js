@@ -9,7 +9,7 @@ router.get("/login", function (req, res, next) {
 	res.render("login");
 });
 
-router.get("/cadastro", function (req, res, next) {
+router.get("/cadastrar", function (req, res, next) {
 	res.render("cadastro-usuario");
 });
 
