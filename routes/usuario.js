@@ -21,4 +21,8 @@ router.get("/chat", function (req, res, next) {
 	res.render("chat");
 });
 
+router.get("/comprar", function (req, res, next) {
+	res.render("comprar");
+});
+
 module.exports = router;
