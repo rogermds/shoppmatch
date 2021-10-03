@@ -299,7 +299,7 @@ main .cadusuario .wrapper form .campo {
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	padding: 0 6rem;
+	padding: 0 3rem;
 	margin: 0.5rem 0;
 }
 
@@ -331,6 +331,7 @@ main .cadusuario .wrapper form button {
 	font-family: "Denk One", sans-serif;
 	margin-top: 3rem;
 	font-size: 2rem;
+	cursor: pointer;
 }
 
 main .cadusuario .login a {
@@ -1248,6 +1249,7 @@ main .login .container .formlogin button {
 	color: white;
 	padding: 0.7rem 0;
 	margin: 4rem 0;
+	cursor: pointer;
 }
 
 main .login .container .recuperacao {
@@ -1520,6 +1522,52 @@ main .comprar .produtoescolhido .descricao {
 
 main .comprar .produtoescolhido .descricao h2 {
 	margin-bottom: 1rem;
+}
+
+/* PÁGINA DE CADASTRADO COM SUCESSO */
+
+main .cadastrosucesso {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .cadastrosucesso .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	flex-direction: column;
+	width: 50%;
+	height: 100%;
+	margin: 5rem 0;
+	border-radius: 50px;
+	font-size: 2rem;
+	color: #656989;
+	-webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+	box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+	text-align: center;
+}
+
+main .cadastrosucesso .container h3 {
+	font-size: 3rem;
+	margin: 3rem 0 1rem 0;
+}
+
+main .cadastrosucesso .container div {
+	margin: 4rem 0;
+}
+
+main .cadastrosucesso .container a {
+	text-align: center;
+	font-family: "Denk One", sans-serif;
+	background-color: #4775ec;
+	font-size: 2rem;
+	border: none;
+	border-radius: 50px;
+	color: white;
+	padding: 1.2rem 15rem;
+	text-decoration: none;
 }
 
 /* FOOTER */
