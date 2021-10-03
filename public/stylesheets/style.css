@@ -1570,6 +1570,59 @@ main .cadastrosucesso .container a {
 	text-decoration: none;
 }
 
+/* PAGINA CONTATO*/
+
+main .contato {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .contato .contatowrapper {
+	width: 500px;
+	height: 600px;
+	margin: 200px;
+	background-color: white;
+	display: flex;
+	border-radius: 30px;
+	-webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+	box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+}
+
+main .contato .contatowrapper .contatocontainer {
+	padding: 50px;
+	color: #656989;
+	font-size: 20px;
+	text-align: center;
+}
+
+main .contato .contatowrapper .contatocontainer .contatotitulo .titulo {
+	text-align: center;
+	font-size: 40px;
+}
+
+main .contato .contatowrapper .contatocontainer .whatsapp img {
+	width: 50px;
+	height: 50px;
+}
+
+.linkchat {
+	border: cornflowerblue solid 2px;
+	border-radius: 20px;
+	width: 200px;
+	height: auto;
+	background-color: cornflowerblue;
+	text-align: center;
+	padding: 10px;
+	margin-left: 80px;
+	margin-top: 60px;
+}
+
+main .botao {
+	text-decoration: none;
+	color: white;
+}
+
 /* FOOTER */
 
 footer {
