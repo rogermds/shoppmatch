@@ -1570,7 +1570,7 @@ main .cadastrosucesso .container a {
 	text-decoration: none;
 }
 
-/* PAGINA CONTATO*/
+/* PAGINA CONTATO */
 
 main .contato {
 	display: flex;
@@ -1606,7 +1606,7 @@ main .contato .contatowrapper .contatocontainer .whatsapp img {
 	height: 50px;
 }
 
-.linkchat {
+main .contato .contatowrapper .contatocontainer .linkchat {
 	border: cornflowerblue solid 2px;
 	border-radius: 20px;
 	width: 200px;
@@ -1618,7 +1618,85 @@ main .contato .contatowrapper .contatocontainer .whatsapp img {
 	margin-top: 60px;
 }
 
-main .botao {
+main .contato .contatowrapper .contatocontainer .linkchat .botao {
+	text-decoration: none;
+	color: white;
+}
+
+/* PAGINA RECUPERE A SUA SENHA */
+
+main .solicitacaosenha {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .solicitacaosenha .wrapperbox {
+	width: 1000px;
+	height: 500px;
+	margin: 200px;
+	background-color: white;
+	display: flex;
+	border-radius: 30px;
+	-webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+	box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+}
+
+main .solicitacaosenha .wrapperbox .containeritens {
+	padding: 50px;
+	color: #656989;
+	font-size: 20px;
+	text-align: center;
+}
+
+main .solicitacaosenha .wrapperbox .containeritens .titulo .titulo2 {
+	font-size: 40px;
+	text-align: center;
+}
+
+main .solicitacaosenha .wrapperbox .containeritens .paragrafo {
+	margin: 40px;
+}
+
+main .solicitacaosenha .wrapperbox .containeritens .botoes {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin: 30px;
+}
+
+main .solicitacaosenha .wrapperbox .botoes .linkchat {
+	border: cornflowerblue solid 2px;
+	border-radius: 20px;
+	width: 200px;
+	height: auto;
+	background-color: cornflowerblue;
+	text-align: center;
+	padding: 10px;
+	margin-left: 80px;
+	margin-top: 60px;
+}
+
+main .solicitacaosenha .wrapperbox .botoes .linkchat2 {
+	border: cornflowerblue solid 2px;
+	border-radius: 20px;
+	width: 200px;
+	height: auto;
+	background-color: cornflowerblue;
+	text-align: center;
+	padding: 10px;
+	margin-left: 80px;
+	margin-top: 60px;
+}
+
+main .solicitacaosenha .wrapperbox .botoes .linkchat .botao {
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+main .solicitacaosenha .wrapperbox .botoes .linkchat2 .botao2 {
+	text-align: center;
 	text-decoration: none;
 	color: white;
 }

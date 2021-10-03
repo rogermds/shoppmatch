@@ -1,43 +1,33 @@
 <%- include('./partials/header') %>
 
-<main>
-    <div class="solicitacaosenha">
-
-        <div class="wrapperbox">
-            <div class="containeritens">
-    
-                <div class="titulo">
-               
-                 <h2 class="titulo2">Trocar a senha</h2>
-        
-                 </div> 
-             
-                <div class="paragrafo">
-                    <p>Identifique-se para receber um e-mail com as instruções e o link para criar uma nova senha.</p>
+    <main>
+        <div class="solicitacaosenha">
+            <div class="wrapperbox">
+                <div class="containeritens">
+                    <div class="titulo">
+                        <h2 class="titulo2">Trocar a senha</h2>
+                    </div>
+                    <div class="paragrafo">
+                        <p>Identifique-se para receber um e-mail com as instruções e o link para criar uma nova senha.
+                        </p>
+                    </div>
+                    <div>
+                        <form>
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email"></label>
+                        </form>
+                    </div>
+                    <div class="botoes">
+                        <div class="linkchat">
+                            <a class="botao" href="#"> Cancelar </a>
+                        </div>
+                        <div class="linkchat2">
+                            <a class="botao2" href="#"> Enviar </a>
+                        </div>
+                    </div>
                 </div>
-    
-                <div>
-                    <form > 
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email"></label>
-                    </form>
-                </div>
-    
-    
-            <div class="botoes"> 
-                    <div class="linkchat">
-                    <a class="botao" href="#"> Cancelar </a>
-                </div>
-    
-                <div class="linkchat2">
-                    <a class="botao2" href="#"> Enviar </a>
-                </div>
-            </div>
-               
             </div>
         </div>
+    </main>
 
-    </div>
-</main>
-
-<%- include('./partials/footer') %>
+    <%- include('./partials/footer') %>
