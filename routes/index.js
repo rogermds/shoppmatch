@@ -8,8 +8,10 @@ router.post("/login", principalController.login);
 router.get("/cadastrar", principalController.telaCadastro);
 router.post("/cadastrar", principalController.cadastrar);
 router.get("/contato", principalController.telaContato);
-router.get("/solicitacaosenha", function (req, res) {
-	res.render("solicitacaosenha");
-});
+router.get("/recuperar", principalController.telaRecuperar);
+
+
+
+
 
 module.exports = router;

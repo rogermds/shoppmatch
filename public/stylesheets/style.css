@@ -42,6 +42,12 @@ header .wrapper {
 	width: 100%;
 }
 
+header .wrapper .logo a {
+	text-decoration: none;
+	color: white;
+}
+
+
 header .wrapper .logo h1 {
 	font-size: 3.2rem;
 }

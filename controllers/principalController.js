@@ -29,6 +29,9 @@ const principalController = {
 	telaContato: function (req, res) {
 	res.render("contato");
 	},
+	telaRecuperar: function (req, res) {
+		res.render("solicitacaosenha");
+	}
 };
 
 module.exports = principalController;
