@@ -27,7 +27,10 @@ const principalController = {
 		res.render("cadastro-sucesso", { novoUsuario });
 	},
 	telaContato: function (req, res) {
-	res.render("contato");
+		res.render("contato");
+	},
+	recuperarSenha: function (req, res) {
+		res.render("solicitacaosenha");
 	},
 };
 
