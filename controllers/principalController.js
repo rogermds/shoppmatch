@@ -32,6 +32,9 @@ const principalController = {
 	recuperarSenha: function (req, res) {
 		res.render("solicitacaosenha");
 	},
+	telaRecuperar: function (req, res) {
+		res.render("solicitacaosenha");
+	}
 };
 
 module.exports = principalController;

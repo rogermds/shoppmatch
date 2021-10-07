@@ -1,28 +1,12 @@
 var express = require("express");
 var router = express.Router();
+var usuarioController = require("../controllers/usuarioController.js");
 
-router.get("/produto/cadastrar", function (req, res, next) {
-	res.render("cadastro-produto");
-});
-
-router.get("/perfil/editar", function (req, res, next) {
-	res.render("edicao-perfil");
-});
-
-router.get("/pagamento", function (req, res, next) {
-	res.render("pagamento");
-});
-
-router.get("/carrinho", function (req, res, next) {
-	res.render("carrinho");
-});
-
-router.get("/chat", function (req, res, next) {
-	res.render("chat");
-});
-
-router.get("/comprar", function (req, res, next) {
-	res.render("comprar");
-});
+router.get("/produto/cadastrar", usuarioController.cadastroProduto);
+router.get("/perfil/editar", usuarioController.perfilEditar);
+router.get("/pagamento", usuarioController.pagamento);
+router.get("/carrinho", usuarioController.carrinho);
+router.get("/chat", usuarioController.chat);
+router.get("/comprar", usuarioController.comprar);
 
 module.exports = router;
