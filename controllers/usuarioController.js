@@ -23,7 +23,6 @@ const usuarioController = {
 		res.render("cadastro-produto");
 	},
 	telaEditarPerfil: function (req, res) {
-		console.log(usuarios[0].path.substr(8, 500));
 		res.render("perfil-editar", { usuarios });
 	},
 	pagamento: function (req, res) {
