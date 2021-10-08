@@ -47,7 +47,6 @@ header .wrapper .logo a {
 	color: white;
 }
 
-
 header .wrapper .logo h1 {
 	font-size: 3.2rem;
 }
@@ -100,8 +99,8 @@ main.cadproduto .principal {
 	margin-bottom: 1rem;
 }
 
-.principal button,
-.principal input {
+main.cadproduto .principal button,
+main.cadproduto .principal input {
 	text-align: center;
 	background: none;
 	border: 1px solid;
@@ -116,22 +115,22 @@ main.cadproduto .principal {
 	margin: 2rem 5rem;
 }
 
-.principal button:hover {
+main.cadproduto .principal button:hover {
 	background: #656989;
 	color: #e9e9e9;
 }
 
-.principal .categorias h1 {
+main.cadproduto .principal .categorias h1 {
 	font-size: 2.4rem;
 	margin: 2rem 0 4rem 0;
 }
 
-.principal .escolhacategoria {
+main.cadproduto .principal .escolhacategoria {
 	display: flex;
-	justify-content: space-between;
+	align-items: baseline;
 }
 
-.principal .categoria {
+main.cadproduto .principal .escolhacategoria .categoria {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -140,63 +139,76 @@ main.cadproduto .principal {
 	width: 100%;
 }
 
-.principal .categorias .escolhacategoria .categoria h2 {
+main.cadproduto .principal .escolhacategoria .categoria img {
+	width: 100%;
+}
+
+main.cadproduto .principal .escolhacategoria .categoria h2 {
 	margin: 3rem 0;
 	font-size: 2rem;
 }
 
-.principal .novousado h1 {
+main.cadproduto .principal .novousado h1 {
 	font-size: 2.4rem;
 	margin: 1rem 0 1rem 0;
 }
 
-.nomeproduto h1 {
+main.cadproduto .nomeproduto h1 {
 	font-size: 2.4rem;
 	margin: 1rem 0 1rem 0;
 }
 
-.principal .topicos h1 {
+main.cadproduto .nomeproduto input {
+	width: 35%;
+}
+
+main.cadproduto .principal .topicos h1 {
 	font-size: 2.4rem;
 	margin: 1rem 0 2rem 0;
 }
 
-.topicos .topicosinput form {
+main.cadproduto .topicos .topicosinput form {
 	display: flex;
 	flex-direction: column;
 }
 
-.topicos .topicosinput form div input {
+main.cadproduto .topicos .topicosinput form div {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+main.cadproduto .topicos .topicosinput form div input {
 	margin: 0.5rem;
 	text-align: left;
 	padding-left: 2rem;
-	width: 47.5%;
+	width: 35%;
 }
 
-.topicos .topicosinput .adicionar button {
+main.cadproduto .topicos .topicosinput .adicionar button {
 	margin: 0.5rem 0 2rem 0;
 }
 
-.escolhavalor h1 {
+main.cadproduto .escolhavalor h1 {
 	font-size: 2.4rem;
 }
 
-.escolhavalor .escolha {
+main.cadproduto .escolhavalor .escolha {
 	display: flex;
 	justify-content: center;
 }
 
-.escolhavalor .escolha .preco {
+main.cadproduto .escolhavalor .escolha .preco {
 	display: flex;
 	width: 50%;
 	align-items: center;
 }
 
-.escolhavalor .escolha .preco label {
+main.cadproduto .escolhavalor .escolha .preco label {
 	font-size: 1.6rem;
 	width: 35%;
 }
 
-.escolhavalor .escolha .preco input {
+main.cadproduto .escolhavalor .escolha .preco input {
 	width: 50%;
 	height: 4rem;
 	text-align: left;
@@ -205,34 +217,35 @@ main.cadproduto .principal {
 	margin: 3rem 0 3rem 1rem;
 }
 
-.fotodescricao {
+main.cadproduto .fotodescricao {
 	margin-bottom: 2rem;
 }
 
-.fotodescricao h1 {
+main.cadproduto .fotodescricao h1 {
 	font-size: 2.4rem;
 	margin-bottom: 3rem;
 }
 
-.fotodescricao .uploadfoto {
+main.cadproduto .fotodescricao .uploadfoto {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
-.fotodescricao .uploadfoto .imgupload {
+main.cadproduto .fotodescricao .uploadfoto .imgupload {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.fotodescricao .uploadfoto .imgupload img {
+main.cadproduto .fotodescricao .uploadfoto .imgupload img {
 	align-self: center;
 	margin-top: 3rem;
 	width: 50%;
 	height: 50%;
 }
 
-.fotodescricao .uploadfoto .imgupload input {
+main.cadproduto .fotodescricao .uploadfoto .imgupload input {
 	font-size: 1.4rem;
 	color: #656989;
 	font-family: "Denk One", sans-serif;
@@ -242,16 +255,16 @@ main.cadproduto .principal {
 	width: 100%;
 }
 
-.fotodescricao .uploadfoto .imgdescricao {
+main.cadproduto .fotodescricao .uploadfoto .imgdescricao {
 	text-align: left;
 	margin-left: 8rem;
 }
 
-.fotodescricao .uploadfoto .imgdescricao h1 {
+main.cadproduto .fotodescricao .uploadfoto .imgdescricao h1 {
 	font-size: 2.2rem;
 }
 
-.fotodescricao .uploadfoto .imgdescricao textarea {
+main.cadproduto .fotodescricao .uploadfoto .imgdescricao textarea {
 	margin-top: 1rem;
 	width: 35rem;
 	height: 15rem;

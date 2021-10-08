@@ -2,54 +2,58 @@
 
     <main class='edicao-principal'>
         <div class='edicao-perfil'>
-            <form action="" method="POST">
+            <form action="/usuario/perfil/editar" method="POST" enctype="multipart/form-data">
                 <div class='upload'>
-                    <img src="/images/edicao-perfil/uploadperfil.png" alt="">
-                    <input type='file'>
+                    <% if (usuarios[0].path !="" ) { %>
+                        <img style='border-radius: 50px;' src="<%= usuarios[0].path.substr(8,500) %>" alt="">
+                        <% } else { %>
+                            <img src="/images/edicao-perfil/uploadperfil.png" alt="">
+                            <% } %>
+                                <input type='file' name='avatar' id='file' multiple>
                 </div>
                 <div class='campo'>
                     <label for="nome">Nome:</label>
-                    <input type="text" id='nome' name='nome'>
+                    <input type="text" id='nome' name='nome' placeholder="<%= usuarios[0].nome %>">
                 </div>
                 <div class='campo'>
                     <label for="cpf">CPF:</label>
-                    <input type="text" id='cpf' name='cpf'>
+                    <input type="text" id='cpf' name='cpf' placeholder="<%= usuarios[0].cpf %>">
                 </div>
                 <div class='campo'>
                     <label for="cep">CEP:</label>
-                    <input type="text" id='cep' name='cep'>
+                    <input type="text" id='cep' name='cep' placeholder="<%= usuarios[0].cep %>">
                 </div>
                 <div class='campo'>
                     <label for="telefone">Telefone:</label>
-                    <input type="text" id='telefone' name='telefone'>
+                    <input type="text" id='telefone' name='telefone' placeholder="<%= usuarios[0].telefone %>">
                 </div>
                 <div class='campo'>
                     <label for="endereco">Endereço:</label>
-                    <input type="text" id='endereco' name='endereco'>
+                    <input type="text" id='endereco' name='endereco' placeholder="<%= usuarios[0].endereco %>">
                 </div>
                 <div class='campo'>
                     <label for="genero">Genêro:</label>
-                    <input type="text" id='genero' name='genero'>
+                    <input type="text" id='genero' name='genero' placeholder="<%= usuarios[0].genero %>">
                 </div>
                 <div class='campo'>
                     <label for="cep">Número:</label>
-                    <input type="text" id='numero' name='numero'>
+                    <input type="text" id='numero' name='numero' placeholder="<%= usuarios[0].numero %>">
                 </div>
                 <div class='campo'>
                     <label for="nascimento">Data de nascimento:</label>
-                    <input type="text" id='nascimento' name='nascimento'>
+                    <input type="text" id='nascimento' name='nascimento' placeholder="<%= usuarios[0].nascimento %>">
                 </div>
                 <div class='campo'>
                     <label for="complemento">Complemento:</label>
-                    <input type="text" id='complemento' name='complemento'>
+                    <input type="text" id='complemento' name='complemento' placeholder="<%= usuarios[0].complemento %>">
                 </div>
                 <div class='campo'>
                     <label for="email">Alterar e-mail:</label>
-                    <input type="text" id='email' name='email'>
+                    <input type="text" id='email' name='email' placeholder="<%= usuarios[0].email %>">
                 </div>
                 <div class='campo'>
-                    <label for="cidade">Estado:</label>
-                    <input type="text" id='cidade' name='cidade'>
+                    <label for="estado">Estado:</label>
+                    <input type="text" id='estado' name='estado' placeholder="<%= usuarios[0].estado %>">
                 </div>
                 <div class='campo'>
                     <label for="senha">Alterar senha:</label>
@@ -57,7 +61,7 @@
                 </div>
                 <div class='campo'>
                     <label for="cidade">Cidade:</label>
-                    <input type="text" id='cidade' name='cidade'>
+                    <input type="text" id='cidade' name='cidade' placeholder="<%= usuarios[0].cidade %>">
                 </div>
                 <div class='campo'>
                     <label for="confirmarsenha">Digite novamente a sua senha:</label>
