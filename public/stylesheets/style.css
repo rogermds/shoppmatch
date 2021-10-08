@@ -1720,6 +1720,88 @@ main .solicitacaosenha .wrapperbox .botoes .linkchat2 .botao2 {
 	color: white;
 }
 
+/* PAGINA TROCA DE SENHA*/
+
+main .recuperar .wrapper-box {
+
+    width: 500px;
+    height: 500px;
+    margin: 200px;
+    background-color: white;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+    box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4)
+}
+
+main .recuperar .wrapper-box .container-itens {
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+main .recuperar .wrapper-box .container-itens .titulorec h2 {
+    color: #656989;
+    text-align: center;
+    margin: 50px;
+    font-size: 40px;
+}
+
+main .recuperar .wrapper-box .container-itens .formulariorec {
+
+    align-items: center;
+   
+  
+}
+
+main .recuperar .wrapper-box .container-itens .formulariorec input {
+
+    width: 200px;
+    height: auto;
+    align-items: center;
+    border-radius: 20px;
+    border: solid cornflowerblue 2px;
+    margin: 20px;
+    
+}
+    
+
+
+main .recuperar .wrapper-box .container-itens .formulariorec label {
+
+    font-size: 20px;
+    color: #656989;
+   
+}
+main .recuperar .wrapperbox .containeritens .botao-confirmar {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 30px;
+ }
+
+ main  .confirmar {
+
+    border: cornflowerblue solid 2px;
+    border-radius: 20px ;
+    width: 200px;
+    height: auto;
+    background-color:cornflowerblue;
+    text-align: center;
+    padding: 10px;
+    margin-left: 80px;
+    margin-top: 50px;
+
+ }
+ main .botaoconf{
+
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+ }
+
 /* FOOTER */
 
 footer {
