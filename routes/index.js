@@ -9,5 +9,6 @@ router.get("/cadastrar", principalController.telaCadastro);
 router.post("/cadastrar", principalController.cadastrar);
 router.get("/contato", principalController.telaContato);
 router.get("/recuperar", principalController.telaRecuperar);
+router.post ("/reuperar", principalController.telaRecuperar);
 
 module.exports = router;
