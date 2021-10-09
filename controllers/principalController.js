@@ -35,6 +35,7 @@ const principalController = {
 	telaRecuperar: function (req, res) {
 		res.render("solicitacaosenha");
 	}
+    
 };
 
 module.exports = principalController;
