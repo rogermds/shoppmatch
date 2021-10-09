@@ -10,5 +10,6 @@ router.get("/pagamento", usuarioController.pagamento);
 router.get("/carrinho", usuarioController.carrinho);
 router.get("/chat", usuarioController.chat);
 router.get("/comprar", usuarioController.comprar);
+router.get ("/trocarsenha", usuarioController.trocarSenha)
 
 module.exports = router;
