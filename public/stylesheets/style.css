@@ -599,6 +599,7 @@ content .matches .cabecalho {
 	border: 1px solid #368dd6;
 	border-right: none;
 	height: 11.5rem;
+	align-items: center;
 }
 
 content .matches .cabecalho h2 {
@@ -609,6 +610,7 @@ content .matches .cabecalho h2 {
 	cursor: pointer;
 	font-size: 2rem;
 	transition: 1s;
+	height: 100%;
 }
 
 content .matches .cabecalho h2:hover {
@@ -622,6 +624,7 @@ content .matches .cabecalho h3 {
 	padding: 10px;
 	cursor: pointer;
 	transition: 1s;
+	height: 100%;
 }
 
 content .matches .cabecalho h3:hover {
@@ -654,6 +657,7 @@ content .matches .conversas .contato .imgcontato {
 	justify-content: center;
 	width: 90px;
 	height: 90px;
+	margin-right: 10px;
 }
 
 content .matches .conversas .contato img {
@@ -671,8 +675,7 @@ content .matches .conversas .contato .preconversa {
 }
 
 content .chatprincipal {
-	display: flex;
-	flex-direction: column;
+	height: 100%;
 	width: 50%;
 	border: 1px solid #368dd6;
 	height: 100%;
@@ -686,8 +689,9 @@ content .chatprincipal .secao h2 {
 }
 
 content .chatprincipal .conversaprincipal {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.1fr 2fr 0.1fr 0.1fr;
 }
 
 content .chatprincipal .conversaprincipal .cabecalho {
@@ -695,6 +699,8 @@ content .chatprincipal .conversaprincipal .cabecalho {
 	background-color: rgb(136, 175, 219);
 	color: white;
 	align-items: center;
+	grid-column: 1/2;
+	grid-row: 1/2;
 }
 
 content .chatprincipal .conversaprincipal .cabecalho .leftarrow img {
@@ -722,8 +728,10 @@ content .chatprincipal .conversaprincipal .cabecalho .nomeusuario {
 
 /* ARRUMEI ALTURA PELO MEDIA QUERY */
 content .chatprincipal .conversaprincipal .conversaatual {
-	height: 30rem;
+	height: 56.5vh;
 	overflow: auto;
+	grid-column: 1/2;
+	grid-row: 2/3;
 }
 
 content .chatprincipal .conversaprincipal .conversaatual .conversa {
@@ -1365,7 +1373,9 @@ main .wrapperboxbranco .container1 form.dadosbancarios input {
 	width: 50%;
 	font-family: "Denk One", sans-serif;
 	color: #656989;
-	padding-left: 0.5rem;
+	padding: 2px 12px;
+	border-radius: 30px;
+	border: 1px solid;
 }
 
 main .wrapperboxbranco .container2 {
@@ -1591,13 +1601,13 @@ main .cadastrosucesso .container a {
 
 /* PAGINA CONTATO */
 
-main .contato {
+main.contato .contato {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-main .contato .contatowrapper {
+main.contato .contato .contatowrapper {
 	width: 500px;
 	height: 600px;
 	margin: 200px;
@@ -1608,24 +1618,24 @@ main .contato .contatowrapper {
 	box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
 }
 
-main .contato .contatowrapper .contatocontainer {
+main.contato .contato .contatowrapper .contatocontainer {
 	padding: 50px;
 	color: #656989;
 	font-size: 20px;
 	text-align: center;
 }
 
-main .contato .contatowrapper .contatocontainer .contatotitulo .titulo {
+main.contato .contato .contatowrapper .contatocontainer .contatotitulo .titulo {
 	text-align: center;
 	font-size: 40px;
 }
 
-main .contato .contatowrapper .contatocontainer .whatsapp img {
+main.contato .contato .contatowrapper .contatocontainer .whatsapp img {
 	width: 50px;
 	height: 50px;
 }
 
-main .contato .contatowrapper .contatocontainer .linkchat {
+main.contato .contato .contatowrapper .contatocontainer .linkchat {
 	border: cornflowerblue solid 2px;
 	border-radius: 20px;
 	width: 200px;
@@ -1637,7 +1647,7 @@ main .contato .contatowrapper .contatocontainer .linkchat {
 	margin-top: 60px;
 }
 
-main .contato .contatowrapper .contatocontainer .linkchat .botao {
+main.contato .contato .contatowrapper .contatocontainer .linkchat .botao {
 	text-decoration: none;
 	color: white;
 }
@@ -1868,30 +1878,4 @@ footer img {
 	width: 40px;
 	height: 40px;
 	margin: 0 15px;
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width: 1440px) {
-	content .chatprincipal .conversaprincipal .conversaatual {
-		height: 49rem;
-	}
-}
-
-@media (max-width: 1366px) {
-	content .chatprincipal .conversaprincipal .conversaatual {
-		height: 35rem;
-	}
-}
-
-@media (max-width: 1280px) {
-	content .chatprincipal .conversaprincipal .conversaatual {
-		height: 41rem;
-	}
-}
-
-@media (max-width: 1024px) {
-	content .chatprincipal .conversaprincipal .conversaatual {
-		height: 42rem;
-	}
 }
