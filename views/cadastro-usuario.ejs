@@ -1,42 +1,54 @@
 <%- include('./partials/header') %>
 
     <main>
-        <div class='cadusuario'>
-            <div class="wrapper">
-                <h3>Crie sua conta</h3>
-                <div>
-                    <form action="/cadastrar" method="POST">
-                        <div class="campo">
-                            <label for="nome">Nome:</label>
-                            <input type="text" name="nome" id="nome">
-                        </div>
-                        <div class="campo">
-                            <label for="cpf">CPF:</label>
-                            <input type="text" name="cpf" id="cpf">
-                        </div>
-                        <div class="campo">
-                            <label for="telefone">Telefone:</label>
-                            <input type="tel" name="telefone" id="telefone">
-                        </div>
-                        <div class="campo">
-                            <label for="email">E-mail:</label>
-                            <input type="email" name="email" id="email">
-                        </div>
-                        <div class="campo">
-                            <label for="senha">Senha:</label>
-                            <input type="password" name="senha" id="senha">
-                        </div>
-                        <div class="campo">
-                            <label for="senha">Repetir a senha:</label>
-                            <input type="password" name="confirmarsenha" id="senha">
-                        </div>
-                        <button type="submit">Criar Conta</button>
-                    </form>
+        <div class="cadastrosucesso" <% if(!novoUsuario.cadastrado) { %> style='display: none' <% } %> >
+                <div class="container">
+                    <h3>
+                        O e-mail <%= novoUsuario.email %> foi cadastrado com sucesso! <br><br>
+                            Seja bem-vindo! <br> <br>
+                            Clique no botão abaixo e comece agora a aproveitar a nossa plataforma
+                    </h3>
+                    <div>
+                        <a href="/login">Login</a>
+                    </div>
                 </div>
-                <div class="login">
-                    <a href="/login"> Fazer Login </a>
+        </div>
+        <div class='cadusuario' <% if(novoUsuario.cadastrado) { %> style='display: none' <% } %> >
+                <div class="wrapper">
+                    <h3>Crie sua conta</h3>
+                    <div>
+                        <form action="/cadastrar" method="POST">
+                            <div class="campo">
+                                <label for="nome">Nome:</label>
+                                <input type="text" name="nome" id="nome">
+                            </div>
+                            <div class="campo">
+                                <label for="cpf">CPF:</label>
+                                <input type="text" name="cpf" id="cpf">
+                            </div>
+                            <div class="campo">
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" name="telefone" id="telefone">
+                            </div>
+                            <div class="campo">
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="campo">
+                                <label for="senha">Senha:</label>
+                                <input type="password" name="senha" id="senha">
+                            </div>
+                            <div class="campo">
+                                <label for="senha">Repetir a senha:</label>
+                                <input type="password" name="confirmarsenha" id="senha">
+                            </div>
+                            <button type="submit">Criar Conta</button>
+                        </form>
+                    </div>
+                    <div class="login">
+                        <a href="/login"> Fazer Login </a>
+                    </div>
                 </div>
-            </div>
         </div>
     </main>
 

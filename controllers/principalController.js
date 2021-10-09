@@ -18,13 +18,18 @@ const principalController = {
 			res.render("login");
 		}
 	},
-	telaCadastro: function (req, res) {
-		res.render("cadastro-usuario");
-	},
 	cadastrar: function (req, res) {
+		console.log(novoUsuario);
 		var novoUsuario = req.body;
+		novoUsuario.cadastrado = true;
 		usuarios.push(novoUsuario);
-		res.render("cadastro-sucesso", { novoUsuario });
+		console.log(req.body);
+		res.render("cadastro-usuario", { novoUsuario });
+	},
+	telaCadastro: function (req, res) {
+		var novoUsuario = {};
+		novoUsuario.cadastrado = false;
+		res.render("cadastro-usuario", { novoUsuario });
 	},
 	telaContato: function (req, res) {
 		res.render("contato");
@@ -33,8 +38,9 @@ const principalController = {
 		res.render("solicitacaosenha");
 	},
 	telaRecuperar: function (req, res) {
+		// req.body
 		res.render("solicitacaosenha");
-	}
+	},
 };
 
 module.exports = principalController;

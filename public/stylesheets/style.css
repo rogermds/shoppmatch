@@ -21,6 +21,11 @@ body {
 	font-family: "Denk One", sans-serif;
 	font-size: 62.5%;
 	max-width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.1fr 1fr 0.1fr;
+	align-items: center;
 }
 
 header {
@@ -277,6 +282,53 @@ main.cadproduto .fotodescricao .uploadfoto .imgdescricao textarea {
 }
 
 /* PAGINA CADASTRO USUARIO */
+
+/* PÁGINA DE CADASTRADO COM SUCESSO */
+
+main .cadastrosucesso {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .cadastrosucesso .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	flex-direction: column;
+	width: 50%;
+	height: 100%;
+	margin: 5rem 0;
+	border-radius: 50px;
+	font-size: 2rem;
+	color: #656989;
+	-webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+	box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+	text-align: center;
+}
+
+main .cadastrosucesso .container h3 {
+	font-size: 3rem;
+	margin: 3rem 0 1rem 0;
+	padding: 20px 40px;
+}
+
+main .cadastrosucesso .container div {
+	margin: 4rem 0;
+}
+
+main .cadastrosucesso .container a {
+	text-align: center;
+	font-family: "Denk One", sans-serif;
+	background-color: #4775ec;
+	font-size: 2rem;
+	border: none;
+	border-radius: 50px;
+	color: white;
+	padding: 1.2rem 15rem;
+	text-decoration: none;
+}
 
 main .cadusuario {
 	display: flex;
@@ -1553,52 +1605,6 @@ main .comprar .produtoescolhido .descricao h2 {
 	margin-bottom: 1rem;
 }
 
-/* PÁGINA DE CADASTRADO COM SUCESSO */
-
-main .cadastrosucesso {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-main .cadastrosucesso .container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: white;
-	flex-direction: column;
-	width: 50%;
-	height: 100%;
-	margin: 5rem 0;
-	border-radius: 50px;
-	font-size: 2rem;
-	color: #656989;
-	-webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
-	box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
-	text-align: center;
-}
-
-main .cadastrosucesso .container h3 {
-	font-size: 3rem;
-	margin: 3rem 0 1rem 0;
-}
-
-main .cadastrosucesso .container div {
-	margin: 4rem 0;
-}
-
-main .cadastrosucesso .container a {
-	text-align: center;
-	font-family: "Denk One", sans-serif;
-	background-color: #4775ec;
-	font-size: 2rem;
-	border: none;
-	border-radius: 50px;
-	color: white;
-	padding: 1.2rem 15rem;
-	text-decoration: none;
-}
-
 /* PAGINA CONTATO */
 
 main.contato .contato {
@@ -1733,84 +1739,68 @@ main .solicitacaosenha .wrapperbox .botoes .linkchat2 .botao2 {
 /* PAGINA TROCA DE SENHA*/
 
 main .recuperar .wrapper-box {
-
-    width: 500px;
-    height: 500px;
-    margin: 200px;
-    background-color: white;
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
-    box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4)
+	width: 500px;
+	height: 500px;
+	margin: 200px;
+	background-color: white;
+	border-radius: 30px;
+	-webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+	box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
 }
 
 main .recuperar .wrapper-box .container-itens {
-
-    display: flex;
-    justify-content: center;
-    
+	display: flex;
+	justify-content: center;
 }
 
 main .recuperar .wrapper-box .container-itens .titulorec h2 {
-    color: #656989;
-    text-align: center;
-    margin: 50px;
-    font-size: 40px;
+	color: #656989;
+	text-align: center;
+	margin: 50px;
+	font-size: 40px;
 }
 
 main .recuperar .wrapper-box .container-itens .formulariorec {
-
-    align-items: center;
-   
-  
+	align-items: center;
 }
 
 main .recuperar .wrapper-box .container-itens .formulariorec input {
-
-    width: 200px;
-    height: auto;
-    align-items: center;
-    border-radius: 20px;
-    border: solid cornflowerblue 2px;
-    margin: 20px;
-    
+	width: 200px;
+	height: auto;
+	align-items: center;
+	border-radius: 20px;
+	border: solid cornflowerblue 2px;
+	margin: 20px;
 }
-    
-
 
 main .recuperar .wrapper-box .container-itens .formulariorec label {
-
-    font-size: 20px;
-    color: #656989;
-   
+	font-size: 20px;
+	color: #656989;
 }
 main .recuperar .wrapperbox .containeritens .botao-confirmar {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin: 30px;
+}
 
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin: 30px;
- }
-
- main  .confirmar {
-
-    border: cornflowerblue solid 2px;
-    border-radius: 20px ;
-    width: 200px;
-    height: auto;
-    background-color:cornflowerblue;
-    text-align: center;
-    padding: 10px;
-    margin-left: 80px;
-    margin-top: 50px;
-
- }
- main .botaoconf{
-
-    text-align: center;
-    text-decoration: none;
-    color:white;
-    font-size: 20px;
- }
+main .confirmar {
+	border: cornflowerblue solid 2px;
+	border-radius: 20px;
+	width: 200px;
+	height: auto;
+	background-color: cornflowerblue;
+	text-align: center;
+	padding: 10px;
+	margin-left: 80px;
+	margin-top: 50px;
+}
+main .botaoconf {
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
 
 /* FOOTER */
 
