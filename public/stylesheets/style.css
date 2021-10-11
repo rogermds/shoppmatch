@@ -13,7 +13,8 @@ html {
 	flex-direction: column;
 	justify-content: center;
 	font-size: 62.5%;
-	max-width: 100%;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 body {
@@ -31,7 +32,6 @@ body {
 header {
 	background-color: #4775ec;
 	width: 100vw;
-	max-width: 100%;
 	color: white;
 	padding: 0 5%;
 	position: sticky;
@@ -1842,7 +1842,7 @@ footer .social {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-right: 5%;
+	padding-right: 5%;
 }
 
 footer .social p {

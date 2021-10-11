@@ -10,7 +10,7 @@ const principalController = {
 	},
 	login: function (req, res) {
 		const { email, senha } = req.body;
-		const usuarioLogado = usuarios.find(
+		const usuarioLogado = usuariosModel.find(
 			(usuario) => usuario.email == email && usuario.senha == senha
 		);
 		// ALTERAR SESSION PARA CADA CATEGORIA
@@ -26,7 +26,7 @@ const principalController = {
 	cadastrar: function (req, res) {
 		const errors = validationResult(req);
 		if (errors.isEmpty()) {
-			const procuraEmail = usuariosModel.usuarios.find(
+			const procuraEmail = usuariosModel.find(
 				(email) => email.email === req.body.email
 			);
 			if (procuraEmail) {
@@ -35,7 +35,7 @@ const principalController = {
 			}
 			if (!procuraEmail) {
 				var novoUsuario = req.body;
-				usuariosModel.usuarios.push(novoUsuario);
+				usuariosModel.push(novoUsuario);
 				res.render("cadastro-usuario");
 			}
 		} else {
