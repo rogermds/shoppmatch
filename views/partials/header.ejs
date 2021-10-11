@@ -16,14 +16,20 @@
     <header>
         <div class='wrapper'>
             <div class='logo'>
-                <a href="/"><h1>ShoppMatch</h1></a>
+                <a href="/">
+                    <h1>ShoppMatch</h1>
+                </a>
             </div>
             <div class=navegation>
                 <nav>
                     <a href="#">Vender</a>
                     <a href="/cadastrar">Cadastra-se</a>
-                    <a href="/login">Entrar</a>
-                    <a class="anunciar" href="#">Anunciar</a>
+                    <% if (!sessao.apelido) { %>
+                        <a href="/login">Entrar</a>
+                        <% } else { %>
+                            <a href="/logout">Sair</a>
+                            <% } %>
+                                <a class="anunciar" href="#">Anunciar</a>
                 </nav>
             </div>
         </div>

@@ -44,11 +44,9 @@ const usuarioController = {
 		console.log(usuarios[1].path);
 		res.render("perfil-editar", { usuarios });
 	},
-
-	
 	trocarSenha: function (req, res) {
 		res.render("trocarsenha");
-	}
+	},
 };
 
 module.exports = usuarioController;

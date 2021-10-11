@@ -1734,7 +1734,7 @@ main .solicitacaosenha .wrapperbox .botoes .linkchat2 .botao2 {
 	color: white;
 }
 
-/* PAGINA TROCA DE SENHA*/
+/* PAGINA TROCA DE SENHA */
 main .recuperar {
 	display: flex;
 	align-items: center;
@@ -1742,13 +1742,13 @@ main .recuperar {
 }
 
 main .recuperar .wrapper-box {
-    width: 500px;
-    height: 500px;
-    margin: 200px;
-    background-color: white;
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
-    box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4)	
+	width: 500px;
+	height: 500px;
+	margin: 200px;
+	background-color: white;
+	border-radius: 30px;
+	-webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+	box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
 }
 
 main .recuperar .wrapper-box .container-itens {

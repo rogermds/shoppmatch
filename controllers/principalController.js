@@ -1,4 +1,5 @@
-const usuarios = [];
+const { validationResult } = require("express-validator");
+const usuariosModel = require("../models/usuariosModel");
 
 const principalController = {
 	index: function (req, res) {
@@ -12,24 +13,41 @@ const principalController = {
 		const usuarioLogado = usuarios.find(
 			(usuario) => usuario.email == email && usuario.senha == senha
 		);
-		if (usuarioLogado != null) {
-			res.redirect("/usuario/comprar");
+		// ALTERAR SESSION PARA CADA CATEGORIA
+		if (usuarioLogado) {
+			req.session.email = usuarioLogado.email;
+			req.session.apelido = usuarioLogado.apelido;
+			const sessao = req.session;
+			res.render("comprar");
 		} else {
 			res.render("login");
 		}
 	},
 	cadastrar: function (req, res) {
-		console.log(novoUsuario);
-		var novoUsuario = req.body;
-		novoUsuario.cadastrado = true;
-		usuarios.push(novoUsuario);
-		console.log(req.body);
-		res.render("cadastro-usuario", { novoUsuario });
+		const errors = validationResult(req);
+		if (errors.isEmpty()) {
+			const procuraEmail = usuariosModel.usuarios.find(
+				(email) => email.email === req.body.email
+			);
+			if (procuraEmail) {
+				var novoUsuario = procuraEmail;
+				res.render("cadastro-usuario");
+			}
+			if (!procuraEmail) {
+				var novoUsuario = req.body;
+				usuariosModel.usuarios.push(novoUsuario);
+				res.render("cadastro-usuario");
+			}
+		} else {
+			console.log(errors.mapped());
+			res.render("cadastro-usuario", {
+				errors: errors.mapped(),
+				old: req.body,
+			});
+		}
 	},
 	telaCadastro: function (req, res) {
-		var novoUsuario = {};
-		novoUsuario.cadastrado = false;
-		res.render("cadastro-usuario", { novoUsuario });
+		res.render("cadastro-usuario");
 	},
 	telaContato: function (req, res) {
 		res.render("contato");
@@ -43,4 +61,4 @@ const principalController = {
 	},
 };
 
-module.exports = principalController;
+module.exports = principalController

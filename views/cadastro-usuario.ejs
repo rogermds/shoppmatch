@@ -1,10 +1,10 @@
 <%- include('./partials/header') %>
 
     <main>
-        <div class="cadastrosucesso" <% if(!novoUsuario.cadastrado) { %> style='display: none' <% } %> >
+        <div class="cadastrosucesso" <% if(true) { %> style='display: none' <% } %> >
                 <div class="container">
                     <h3>
-                        O e-mail <%= novoUsuario.email %> foi cadastrado com sucesso! <br><br>
+                        O e-mail <%= "xxxx" %> foi cadastrado com sucesso! <br><br>
                             Seja bem-vindo! <br> <br>
                             Clique no botão abaixo e comece agora a aproveitar a nossa plataforma
                     </h3>
@@ -13,34 +13,75 @@
                     </div>
                 </div>
         </div>
-        <div class='cadusuario' <% if(novoUsuario.cadastrado) { %> style='display: none' <% } %> >
+        <div class='cadusuario' <% if(false) { %> style='display: none' <% } %> >
                 <div class="wrapper">
                     <h3>Crie sua conta</h3>
                     <div>
                         <form action="/cadastrar" method="POST">
                             <div class="campo">
                                 <label for="nome">Nome:</label>
-                                <input type="text" name="nome" id="nome">
+                                <input type="text" name="nome" id="nome" value="<%= locals.old && old.nome %>">
+                                <% if(locals.errors && errors.nome) { %>
+                                    <span style='color: red; font-size: 1.4rem;'>
+                                        <%= errors.nome.msg %>
+                                    </span>
+                                    <% } %>
+                            </div>
+                            <div class="campo">
+                                <label for="apelido">Apelido:</label>
+                                <input type="text" name="apelido" id="apelido" value="<%= locals.old && old.apelido %>">
+                                <% if(locals.errors && errors.apelido) { %>
+                                    <span style='color: red; font-size: 1.4rem;'>
+                                        <%= errors.apelido.msg %>
+                                    </span>
+                                    <% } %>
                             </div>
                             <div class="campo">
                                 <label for="cpf">CPF:</label>
-                                <input type="text" name="cpf" id="cpf">
+                                <input type="text" name="cpf" id="cpf" value="<%= locals.old && old.cpf %>">
+                                <% if(locals.errors && errors.cpf) { %>
+                                    <span style='color: red; font-size: 1.4rem;'>
+                                        <%= errors.cpf.msg %>
+                                    </span>
+                                    <% } %>
                             </div>
                             <div class="campo">
                                 <label for="telefone">Telefone:</label>
-                                <input type="tel" name="telefone" id="telefone">
+                                <input type="tel" name="telefone" id="telefone"
+                                    value="<%= locals.old && old.telefone %>">
+                                <% if(locals.errors && errors.telefone) { %>
+                                    <span style='color: red; font-size: 1.4rem;'>
+                                        <%= errors.telefone.msg %>
+                                    </span>
+                                    <% } %>
                             </div>
                             <div class="campo">
                                 <label for="email">E-mail:</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" value="<%= locals.old && old.email %>">
+                                <% if(locals.errors && errors.email) { %>
+                                    <span style='color: red; font-size: 1.4rem;'>
+                                        <%= errors.email.msg %>
+                                    </span>
+                                    <% } %>
                             </div>
                             <div class="campo">
                                 <label for="senha">Senha:</label>
-                                <input type="password" name="senha" id="senha">
+                                <input type="password" name="senha" id="senha" value="<%= locals.old && old.senha %>">
+                                <% if(locals.errors && errors.senha) { %>
+                                    <span style='color: red; font-size: 1.4rem;'>
+                                        <%= errors.senha.msg %>
+                                    </span>
+                                    <% } %>
                             </div>
                             <div class="campo">
                                 <label for="senha">Repetir a senha:</label>
-                                <input type="password" name="confirmarsenha" id="senha">
+                                <input type="password" name="confirmarsenha" id="senha"
+                                    value="<%= locals.old && old.confirmarsenha %>">
+                                <% if(locals.errors && errors.confirmarsenha) { %>
+                                    <span style='color: red; font-size: 1.4rem; margin-top: 5px;'>
+                                        <%= errors.confirmarsenha.msg %>
+                                    </span>
+                                    <% } %>
                             </div>
                             <button type="submit">Criar Conta</button>
                         </form>
