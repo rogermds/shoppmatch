@@ -13,41 +13,30 @@ const principalController = {
 		const usuarioLogado = usuariosModel.find(
 			(usuario) => usuario.email == email && usuario.senha == senha
 		);
-		// ALTERAR SESSION PARA CADA CATEGORIA
 		if (usuarioLogado) {
 			req.session.email = usuarioLogado.email;
 			req.session.apelido = usuarioLogado.apelido;
-			const sessao = req.session;
 			res.render("comprar");
 		} else {
 			res.render("login");
 		}
 	},
+	telaCadastro: function (req, res) {
+		novoUsuario = undefined;
+		res.render("cadastro-usuario", novoUsuario);
+	},
 	cadastrar: function (req, res) {
 		const errors = validationResult(req);
-		if (errors.isEmpty()) {
-			const procuraEmail = usuariosModel.find(
-				(email) => email.email === req.body.email
-			);
-			if (procuraEmail) {
-				var novoUsuario = procuraEmail;
-				res.render("cadastro-usuario");
-			}
-			if (!procuraEmail) {
-				var novoUsuario = req.body;
-				usuariosModel.push(novoUsuario);
-				res.render("cadastro-usuario");
-			}
-		} else {
-			console.log(errors.mapped());
+		if (!errors.isEmpty()) {
 			res.render("cadastro-usuario", {
 				errors: errors.mapped(),
 				old: req.body,
 			});
+		} else {
+			const novoUsuario = req.body;
+			usuariosModel.push(novoUsuario);
+			res.render("cadastro-usuario", { novoUsuario });
 		}
-	},
-	telaCadastro: function (req, res) {
-		res.render("cadastro-usuario");
 	},
 	telaContato: function (req, res) {
 		res.render("contato");
@@ -56,9 +45,12 @@ const principalController = {
 		res.render("solicitacaosenha");
 	},
 	telaRecuperar: function (req, res) {
-		// req.body
 		res.render("solicitacaosenha");
+	},
+	logout: function (req, res) {
+		req.session.destroy();
+		res.redirect("/");
 	},
 };
 
-module.exports = principalController
+module.exports = principalController;

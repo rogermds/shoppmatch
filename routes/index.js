@@ -7,13 +7,10 @@ router.get("/", principalController.index);
 router.get("/login", principalController.telaLogin);
 router.post("/login", principalController.login);
 router.get("/cadastrar", principalController.telaCadastro);
-router.post("/cadastrar",validator.validacoesCadastro,principalController.cadastrar);
+router.post("/cadastrar", validator.validacoesCadastro,	principalController.cadastrar);
 router.get("/contato", principalController.telaContato);
 router.get("/recuperar", principalController.telaRecuperar);
 router.post("/recuperar", principalController.telaRecuperar);
-router.get("/logout", (req, res) => {
-	req.session.destroy();
-	res.redirect("/");
-});
+router.get("/logout", principalController.logout);
 
 module.exports = router;

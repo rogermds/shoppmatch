@@ -11,21 +11,25 @@ let validacoesCadastro = [
 		.isLength({ min: 5 })
 		.withMessage("O apelido deve ter pelo menos 5 caracteres"),
 	check("cpf")
-		.isLength({ min: 11 })
-		.withMessage("O cpf deve ter pelo menos 11 caracteres"),
+		.isLength({ min: 11, max: 11 })
+		.withMessage("Preencha o CPF corretamente"),
 	check("telefone")
-		.isLength({ min: 11 })
-		.withMessage("O telefone deve ter pelo menos 11 caracteres"),
-	check("email")
-		.isEmail()
-		.withMessage("Digite um email válido")
-		.custom((email) => {
-			const jaExiste = usuariosModel.usuarios.find(
-				(email) => email.email === req.body.email
-			);
-			return jaExiste.email == email;
-		})
-		.withMessage("Usuário já existe"),
+		.isLength({ min: 11, max: 11 })
+		.withMessage("Preencha o telefone corretamente"),
+	check("email").custom((emailBody) => {
+		const procuraEmail = usuariosModel.find(
+			(email) => email.email == emailBody
+		);
+		if (!emailBody) {
+			return Promise.reject("E-mail é obrigatório");
+		}
+		if (!procuraEmail) {
+			return emailBody;
+		}
+		if (procuraEmail.email) {
+			return Promise.reject("E-mail já cadastrado");
+		}
+	}),
 	check("senha")
 		.isLength({ min: 6 })
 		.withMessage("A senha deve ter pelo menos 6 caracteres"),

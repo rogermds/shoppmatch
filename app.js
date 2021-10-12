@@ -4,6 +4,8 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var session = require("express-session");
+// variável global que guarda a session
+var sessao = require('./middlewares/locals')
 
 var indexRouter = require("./routes/index");
 var usuarioRouter = require("./routes/usuario");
@@ -20,16 +22,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(session({ secret: "Segredo", resave: true, saveUninitialized: true }));
-app.use(function (req, res, next) {
-	if (!req.session.apelido) {
-		req.session.apelido = undefined;
-		res.locals.sessao = req.session;
-		return next();
-	} else  {
-		res.locals.sessao = req.session;
-		return next();
-	}
-});
+// variável global que guarda a session
+app.use(sessao);
 
 app.use("/", indexRouter);
 app.use("/usuario", usuarioRouter);

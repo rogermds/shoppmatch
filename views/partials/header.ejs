@@ -23,10 +23,11 @@
             <div class=navegation>
                 <nav>
                     <a href="#">Vender</a>
-                    <a href="/cadastrar">Cadastra-se</a>
-                    <% if (!sessao.apelido) { %>
+                    <% if (!sessao.email) { %>
+                        <a href="/cadastrar">Cadastra-se</a>
                         <a href="/login">Entrar</a>
                         <% } else { %>
+                            <h1> Olá <%= sessao.apelido %> </h1>
                             <a href="/logout">Sair</a>
                             <% } %>
                                 <a class="anunciar" href="#">Anunciar</a>

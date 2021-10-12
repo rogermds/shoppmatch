@@ -1,19 +1,8 @@
 <%- include('./partials/header') %>
 
     <main>
-        <div class="cadastrosucesso" <% if(true) { %> style='display: none' <% } %> >
-                <div class="container">
-                    <h3>
-                        O e-mail <%= "xxxx" %> foi cadastrado com sucesso! <br><br>
-                            Seja bem-vindo! <br> <br>
-                            Clique no botão abaixo e comece agora a aproveitar a nossa plataforma
-                    </h3>
-                    <div>
-                        <a href="/login">Login</a>
-                    </div>
-                </div>
-        </div>
-        <div class='cadusuario' <% if(false) { %> style='display: none' <% } %> >
+        <% if(!novoUsuario) { %>
+            <div class='cadusuario'>
                 <div class="wrapper">
                     <h3>Crie sua conta</h3>
                     <div>
@@ -86,11 +75,28 @@
                             <button type="submit">Criar Conta</button>
                         </form>
                     </div>
-                    <div class="login">
-                        <a href="/login"> Fazer Login </a>
+                    <div>
+                        <div class="login">
+                            <a href="/login"> Fazer Login </a>
+                        </div>
                     </div>
                 </div>
-        </div>
+            </div>
+            <% } %>
+                <% if(novoUsuario) { %>
+                    <div class="cadastrosucesso">
+                        <div class="container">
+                            <h3>
+                                O e-mail <%= novoUsuario.email %> foi cadastrado com sucesso! <br><br>
+                                    Seja bem-vindo! <br> <br>
+                                    Clique no botão abaixo e comece agora a aproveitar a nossa plataforma
+                            </h3>
+                            <div>
+                                <a href="/login">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
     </main>
 
     <%- include('./partials/footer') %>
