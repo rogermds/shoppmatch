@@ -20,18 +20,19 @@
                     <h1>ShoppMatch</h1>
                 </a>
             </div>
-            <div class=navegation>
-                <nav>
-                    <a href="#">Vender</a>
-                    <% if (!sessao.email) { %>
-                        <a href="/cadastrar">Cadastra-se</a>
-                        <a href="/login">Entrar</a>
-                        <% } else { %>
-                            <h1> Olá <%= sessao.apelido %> </h1>
-                            <a href="/logout">Sair</a>
-                            <% } %>
-                                <a class="anunciar" href="#">Anunciar</a>
-                </nav>
+            <div class='navegation'>
+                <% if (!sessao.email) { %>
+                    <a class="anunciar" href="#">Anunciar</a>
+                    <a href="/cadastrar">Cadastra-se</a>
+                    <a href="/login">Entrar</a>
+                    <% } else { %>
+                        <img class='imagem' src="/images/icons/perfil.png" alt="">
+                        <h1> Olá, <%= sessao.apelido %> !
+                        </h1>
+                        <a class='imagem' href="/usuario/carrinho"><img src="/images/icons/carrinho.png"
+                                alt="carrinho"></a>
+                        <a href="/logout">Sair</a>
+                        <% } %>
             </div>
         </div>
     </header>

@@ -4,7 +4,6 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var session = require("express-session");
-// variável global que guarda a session
 var sessao = require('./middlewares/locals')
 
 var indexRouter = require("./routes/index");
