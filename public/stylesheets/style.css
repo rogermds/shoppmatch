@@ -88,6 +88,12 @@ header .wrapper .navegation .imagem {
 	width: 40px;
 }
 
+header .wrapper .navegation .avatar img {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+}
+
 header .wrapper .navegation a img {
 	width: 70%;
 }
@@ -297,8 +303,6 @@ main.cadproduto .fotodescricao .uploadfoto .imgdescricao textarea {
 	font-size: 1.8rem;
 }
 
-/* PAGINA CADASTRO USUARIO */
-
 /* PÁGINA DE CADASTRADO COM SUCESSO */
 
 main .cadastrosucesso {
@@ -345,6 +349,8 @@ main .cadastrosucesso .container a {
 	padding: 1.2rem 15rem;
 	text-decoration: none;
 }
+
+/* PÁGINA CADASTRO USUÁRIO */
 
 main .cadusuario {
 	display: flex;
@@ -995,9 +1001,10 @@ main.edicao-principal {
 }
 
 .edicao-perfil .upload img {
-	width: 50%;
-	height: 50%;
+	width: 200px;
+	height: 200px;
 	margin-bottom: 1.5rem;
+	border-radius: 100%;
 }
 
 .edicao-perfil .upload input {

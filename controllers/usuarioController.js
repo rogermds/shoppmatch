@@ -1,29 +1,11 @@
-const usuarios = [
-	{
-		nome: "Rogério Martins",
-		cpf: "40136061869",
-		cep: "02860030",
-		telefone: "11961615456",
-		endereco: "R Spencer Vampre",
-		genero: "M",
-		numero: "691",
-		nascimento: "07/03/96",
-		complemento: "",
-		email: "rmartins.economia@gmail.com",
-		estado: "SP",
-		senha: "123456",
-		cidade: "São Paulo",
-		confirmarsenha: "123456",
-		path: "./public/images/user-image/1633666757695 - fotoProfissional.jpg",
-	},
-];
+const usuarios = require("../models/usuariosModel");
 
 const usuarioController = {
 	cadastroProduto: function (req, res) {
 		res.render("cadastro-produto");
 	},
 	telaEditarPerfil: function (req, res) {
-		res.render("perfil-editar", { usuarios });
+		res.render("perfil-editar");
 	},
 	pagamento: function (req, res) {
 		res.render("pagamento");
@@ -38,11 +20,28 @@ const usuarioController = {
 		res.render("comprar");
 	},
 	editarPerfil: function (req, res) {
-		const infoUser = req.body;
-		infoUser.path = req.file.destination + "/" + req.file.filename;
-		usuarios.push(infoUser);
-		console.log(usuarios[1].path);
-		res.render("perfil-editar", { usuarios });
+		const alterarUsuario = usuarios.map((usuario) => {
+			if (!req.file) {
+				usuario.avatar = req.session.user.avatar;
+			} else {
+				usuario.avatar = req.file.destination + "/" + req.file.filename;
+			}
+			usuario.nome = req.body.nome;
+			usuario.apelido = req.body.apelido;
+			usuario.cpf = req.body.cpf;
+			usuario.nascimento = req.body.nascimento;
+			usuario.telefone = req.body.telefone;
+			usuario.genero = req.body.genero;
+			usuario.cep = req.body.cep;
+			usuario.endereco = req.body.endereco;
+			usuario.numero = req.body.numero;
+			usuario.estado = req.body.estado;
+			usuario.cidade = req.body.cidade;
+			usuario.email = req.body.email;
+			usuario.senha = req.body.senha;
+			return (req.session.user = usuario);
+		});
+		return res.render("perfil-editar");
 	},
 	trocarSenha: function (req, res) {
 		res.render("trocarsenha");

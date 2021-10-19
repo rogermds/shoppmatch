@@ -1,5 +1,5 @@
 const { validationResult } = require("express-validator");
-const usuariosModel = require("../models/usuariosModel");
+const usuarios = require("../models/usuariosModel");
 
 const principalController = {
 	index: function (req, res) {
@@ -10,13 +10,25 @@ const principalController = {
 	},
 	login: function (req, res) {
 		const { email, senha } = req.body;
-		const usuarioLogado = usuariosModel.find(
+		const usuarioLogado = usuarios.find(
 			(usuario) => usuario.email == email && usuario.senha == senha
 		);
 		if (usuarioLogado) {
-			req.session.email = usuarioLogado.email;
-			req.session.apelido = usuarioLogado.apelido;
-			res.render("comprar");
+			req.session.user = {}
+			req.session.user.avatar = usuarioLogado.avatar;
+			req.session.user.nome = usuarioLogado.nome;
+			req.session.user.apelido = usuarioLogado.apelido;
+			req.session.user.cpf = usuarioLogado.cpf;
+			req.session.user.nascimento = usuarioLogado.nascimento;
+			req.session.user.telefone = usuarioLogado.telefone;
+			req.session.user.genero = usuarioLogado.genero;
+			req.session.user.cep = usuarioLogado.cep;
+			req.session.user.endereco = usuarioLogado.endereco;
+			req.session.user.numero = usuarioLogado.numero;
+			req.session.user.estado = usuarioLogado.estado;
+			req.session.user.cidade = usuarioLogado.cidade;
+			req.session.user.email = usuarioLogado.email;
+			res.redirect("/");
 		} else {
 			res.render("login");
 		}
@@ -34,7 +46,7 @@ const principalController = {
 			});
 		} else {
 			const novoUsuario = req.body;
-			usuariosModel.push(novoUsuario);
+			usuarios.push(novoUsuario);
 			res.render("cadastro-usuario", { novoUsuario });
 		}
 	},
