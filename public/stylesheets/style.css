@@ -41,7 +41,7 @@ header {
 }
 
 header .wrapper {
-	height: 11vh;
+	height: 13vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -101,8 +101,6 @@ header .wrapper .navegation a img {
 /* PÁGINA CADASTRO PRODUTO */
 
 main.cadproduto {
-	align-items: center;
-	justify-content: center;
 	text-align: center;
 	color: #656989;
 	display: flex;
@@ -117,6 +115,8 @@ main.cadproduto .principal {
 	padding: 2.5% 0;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 70%;
 	border: #9ab2f1 1px solid;
 }
@@ -147,6 +147,10 @@ main.cadproduto .principal button:hover {
 	color: #e9e9e9;
 }
 
+main.cadproduto .principal .categorias {
+	width: 90%;
+}
+
 main.cadproduto .principal .categorias h1 {
 	font-size: 2.4rem;
 	margin: 2rem 0 4rem 0;
@@ -163,15 +167,22 @@ main.cadproduto .principal .escolhacategoria .categoria {
 	align-items: center;
 	justify-content: flex-start;
 	margin: 0 1.5rem;
+	padding: 2.5% 0;
 	width: 100%;
+	transition: 0;
+}
+
+main.cadproduto .principal .escolhacategoria .categoria:hover {
+	border-radius: 40px;
+	border: #368dd6 1px solid;
 }
 
 main.cadproduto .principal .escolhacategoria .categoria img {
-	width: 100%;
+	width: 75%;
 }
 
 main.cadproduto .principal .escolhacategoria .categoria h2 {
-	margin: 3rem 0;
+	margin: 10% 0;
 	font-size: 2rem;
 }
 
@@ -1878,7 +1889,7 @@ main .botaoconf {
 footer {
 	color: white;
 	width: 100%;
-	height: 20vh;
+	height: 200%;
 	background-color: #4775ec;
 	display: flex;
 	align-items: center;
