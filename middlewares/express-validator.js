@@ -31,11 +31,17 @@ let validacoesCadastro = [
 		}
 	}),
 	check("senha")
-		.isLength({ min: 6 })
-		.withMessage("A senha deve ter pelo menos 6 caracteres"),
+		.isLength({ min: 6, max: 10 })
+		.withMessage("A senha deve ter entre 6 e 10 caracteres"),
 	check("confirmarsenha")
-		.isLength({ min: 6 })
-		.withMessage("A senha deve ter pelo menos 6 caracteres"),
+		.isLength({ min: 6, max: 10 })
+		.withMessage("A senha deve ter entre 6 e 10 caracteres")
+		.custom(async (confirmarsenha, { req }) => {
+			const senha = req.body.senha;
+			if (senha !== confirmarsenha) {
+				throw new Error("As senhas não coincidem");
+			}
+		}),
 ];
 
 module.exports = { validacoesCadastro };

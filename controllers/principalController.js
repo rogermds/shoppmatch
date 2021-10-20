@@ -6,6 +6,7 @@ const principalController = {
 		res.render("home");
 	},
 	telaLogin: function (req, res) {
+		req.session.destroy();
 		res.render("login");
 	},
 	login: function (req, res) {
@@ -14,7 +15,7 @@ const principalController = {
 			(usuario) => usuario.email == email && usuario.senha == senha
 		);
 		if (usuarioLogado) {
-			req.session.user = {}
+			req.session.user = {};
 			req.session.user.avatar = usuarioLogado.avatar;
 			req.session.user.nome = usuarioLogado.nome;
 			req.session.user.apelido = usuarioLogado.apelido;
@@ -33,10 +34,6 @@ const principalController = {
 			res.render("login");
 		}
 	},
-	telaCadastro: function (req, res) {
-		novoUsuario = undefined;
-		res.render("cadastro-usuario", novoUsuario);
-	},
 	cadastrar: function (req, res) {
 		const errors = validationResult(req);
 		if (!errors.isEmpty()) {
@@ -50,6 +47,11 @@ const principalController = {
 			res.render("cadastro-usuario", { novoUsuario });
 		}
 	},
+	telaCadastro: function (req, res) {
+		const novoUsuario = undefined;
+		res.render("cadastro-usuario", { novoUsuario });
+	},
+
 	telaContato: function (req, res) {
 		res.render("contato");
 	},
