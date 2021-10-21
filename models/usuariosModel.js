@@ -15,6 +15,7 @@ const usuarios = [
 		estado: "SP",
 		senha: "123456",
 		cidade: "São Paulo",
+		senha: "123456",
 		confirmarsenha: "123456",
 		avatar: "./public/images/user-image/1633666757695 - fotoProfissional.jpg",
 	},

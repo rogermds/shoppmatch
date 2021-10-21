@@ -30,7 +30,7 @@
                                 <a href="/usuario/perfil/editar"><img src="<%= sessao.user.avatar.substr(8,500) %>"
                                         alt="avatar profile"></a>
                                 <% } else { %>
-                                    <img src="/images/icons/perfil.png" alt="avatar profile">
+                                    <a href="/usuario/perfil/editar"><img src="/images/icons/perfil.png" alt="avatar profile"></a>
                                     <% } %>
                         </div>
                         <h1> Olá, <%= sessao.user.apelido %> !

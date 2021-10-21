@@ -34,12 +34,18 @@ const principalController = {
 			res.render("login");
 		}
 	},
+	telaCadastro: function (req, res) {
+		const novoUsuario = '';
+		res.render("cadastro-usuario", { novoUsuario });
+	},
 	cadastrar: function (req, res) {
 		const errors = validationResult(req);
+		const novoUsuario = undefined;
 		if (!errors.isEmpty()) {
 			res.render("cadastro-usuario", {
 				errors: errors.mapped(),
 				old: req.body,
+				novoUsuario
 			});
 		} else {
 			const novoUsuario = req.body;
@@ -47,11 +53,6 @@ const principalController = {
 			res.render("cadastro-usuario", { novoUsuario });
 		}
 	},
-	telaCadastro: function (req, res) {
-		const novoUsuario = undefined;
-		res.render("cadastro-usuario", { novoUsuario });
-	},
-
 	telaContato: function (req, res) {
 		res.render("contato");
 	},
