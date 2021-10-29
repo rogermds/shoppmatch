@@ -12,5 +12,8 @@ router.get("/contato", principalController.telaContato);
 router.get("/recuperar", principalController.telaRecuperar);
 router.post("/recuperar", principalController.telaRecuperar);
 router.get("/logout", principalController.logout);
+router.get('/teste',(req,res) => {
+    res.render('teste')
+})
 
 module.exports = router;
