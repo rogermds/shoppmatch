@@ -1,6 +1,6 @@
 const config = {
     username: 'root',
-    password: 'shoppmatch123',
+    password: 'root',
     database: 'shoppmatch',
     host: 'localhost',
     dialect: 'mysql'
