@@ -1,4 +1,4 @@
-const usuarios = require("../models/usuariosModel");
+
 
 const usuarioController = {
 	cadastroProduto: function (req, res) {

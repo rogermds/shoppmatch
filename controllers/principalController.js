@@ -1,5 +1,5 @@
 const { validationResult } = require("express-validator");
-const usuarios = require("../models/usuariosModel");
+
 
 const principalController = {
 	index: function (req, res) {
