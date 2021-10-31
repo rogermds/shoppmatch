@@ -1,16 +1,16 @@
 module.exports = (sequelize, DataTypes) => {
-	const Pagamentos = sequelize.define(
-		"Pagamentos",
+	const Categorias = sequelize.define(
+		"Categorias",
 		{
-			id_pagamento: {
+			id_categoria: {
 				type: DataTypes.INTEGER,
 				primaryKey: true,
 				autoIncrement: true,
 			},
-			forma_pagamento: DataTypes.STRING,
+			nome_categoria: DataTypes.STRING,
 		},
 		{
-			tableName: "pagamentos",
+			tableName: "categorias",
 			timestamps: false,
 		}
 	);

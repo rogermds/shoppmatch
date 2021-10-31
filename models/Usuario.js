@@ -9,9 +9,8 @@ module.exports = (sequelize, DataTypes) => {
 			},
 			email: DataTypes.STRING,
 			senha: DataTypes.STRING,
-			genero: DataTypes.STRING,
-			id_perfil: DataTypes.STRING, /* VERIFICAR FK */
-			id_endereco: DataTypes.STRING, /* VERIFICAR FK */
+			id_perfil: DataTypes.INTEGER /* VERIFICAR FK */,
+			id_endereco: DataTypes.INTEGER /* VERIFICAR FK */,
 		},
 		{
 			tableName: "usuario",
