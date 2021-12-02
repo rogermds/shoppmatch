@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
 var usuarioController = require("../controllers/usuarioController.js");
-var uploadAvatar = require("../middlewares/multer.js");
+// var uploadAvatar = require("../middlewares/multer.js");
 var authenticator = require('../middlewares/authenticator')
 
 router.get("/produto/cadastrar", authenticator, usuarioController.cadastroProduto);
