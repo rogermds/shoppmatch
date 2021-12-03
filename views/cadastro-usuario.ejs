@@ -26,6 +26,24 @@
                                     <% } %>
                             </div>
                             <div class="campo">
+                                <label for="genero">Genero:</label>
+                                <input type="text" name="genero" id="genero" value="<%= locals.old && old.genero %>">
+                                <% if(locals.errors && errors.genero) { %>
+                                    <span style='color: red; font-size: 1.4rem;'>
+                                        <%= errors.genero.msg %>
+                                    </span>
+                                    <% } %>
+                            </div>
+                            <div class="campo">
+                                <label for="dataNascimento">Data de nascimento:</label>
+                                <input type="text" name="dataNascimento" id="dataNascimento" value="<%= locals.old && old.dataNascimento %>">
+                                <% if(locals.errors && errors.dataNascimento) { %>
+                                    <span style='color: red; font-size: 1.4rem;'>
+                                        <%= errors.dataNascimento.msg %>
+                                    </span>
+                                    <% } %>
+                            </div>
+                            <div class="campo">
                                 <label for="cpf">CPF:</label>
                                 <input type="text" name="cpf" id="cpf" value="<%= locals.old && old.cpf %>">
                                 <% if(locals.errors && errors.cpf) { %>
@@ -35,12 +53,12 @@
                                     <% } %>
                             </div>
                             <div class="campo">
-                                <label for="telefone">Telefone:</label>
-                                <input type="tel" name="telefone" id="telefone"
-                                    value="<%= locals.old && old.telefone %>">
-                                <% if(locals.errors && errors.telefone) { %>
+                                <label for="celular">Celular:</label>
+                                <input type="celular" name="celular" id="celular"
+                                    value="<%= locals.old && old.celular %>">
+                                <% if(locals.errors && errors.celular) { %>
                                     <span style='color: red; font-size: 1.4rem;'>
-                                        <%= errors.telefone.msg %>
+                                        <%= errors.celular.msg %>
                                     </span>
                                     <% } %>
                             </div>
@@ -83,7 +101,7 @@
                 </div>
             </div>
             <% } %>
-                <% if(novoUsuario) { %>
+                <!-- <% if(novoUsuario) { %>
                     <div class="cadastrosucesso">
                         <div class="container">
                             <h3>
@@ -96,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <% } %>
+                    <% } %> -->
     </main>
 
     <%- include('./partials/footer') %>
