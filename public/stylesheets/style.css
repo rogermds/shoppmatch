@@ -1373,8 +1373,7 @@ main .login .container {
 
 main .login .container h3 {
 	font-size: 3rem;
-	margin: 3rem 0 4rem 0;
-	margin-bottom: 4rem;
+	margin: 3rem 0 3rem 0;
 }
 
 main .login .container .formlogin {
@@ -1406,7 +1405,7 @@ main .login .container .formlogin button {
 	border-radius: 50px;
 	color: white;
 	padding: 0.7rem 0;
-	margin: 4rem 0;
+	margin: 2rem 0;
 	cursor: pointer;
 }
 
@@ -1940,4 +1939,12 @@ footer img {
 	width: 40px;
 	height: 40px;
 	margin: 0 15px;
+}
+
+.cadastradosucesso {
+	color: green;
+	font-size: 13px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5px;
 }

@@ -36,7 +36,7 @@ module.exports = (sequelize, DataTypes) => {
 			},
 			avatar: {
 				type: DataTypes.STRING,
-				allowNull: false,
+				allowNull: true,
 			},
 			email: {
 				type: DataTypes.STRING,
@@ -48,11 +48,12 @@ module.exports = (sequelize, DataTypes) => {
 			},
 		},
 		{
-			tableName: usuarios,
+			tableName: 'usuarios',
+			modelName: "Usuario",
 		}
 	);
-  usuario.associate = function(models) {
-    // associations can be defined here
-  };
+  Usuario.associate = function (models) {
+		// associations can be defined here
+	};
   return Usuario;
 };

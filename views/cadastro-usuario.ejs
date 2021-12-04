@@ -1,7 +1,6 @@
 <%- include('./partials/header') %>
 
     <main>
-        <% if(!novoUsuario) { %>
             <div class='cadusuario'>
                 <div class="wrapper">
                     <h3>Crie sua conta</h3>
@@ -26,7 +25,7 @@
                                     <% } %>
                             </div>
                             <div class="campo">
-                                <label for="genero">Genero:</label>
+                                <label for="genero">Gênero:</label>
                                 <input type="text" name="genero" id="genero" value="<%= locals.old && old.genero %>">
                                 <% if(locals.errors && errors.genero) { %>
                                     <span style='color: red; font-size: 1.4rem;'>
@@ -36,10 +35,10 @@
                             </div>
                             <div class="campo">
                                 <label for="dataNascimento">Data de nascimento:</label>
-                                <input type="text" name="dataNascimento" id="dataNascimento" value="<%= locals.old && old.dataNascimento %>">
-                                <% if(locals.errors && errors.dataNascimento) { %>
+                                <input type="text" name="data_nascimento" id="dataNascimento" value="<%= locals.old && old.data_nascimento %>">
+                                <% if(locals.errors && errors.data_nascimento) { %>
                                     <span style='color: red; font-size: 1.4rem;'>
-                                        <%= errors.dataNascimento.msg %>
+                                        <%= errors.data_nascimento.msg %>
                                     </span>
                                     <% } %>
                             </div>
@@ -100,21 +99,6 @@
                     </div>
                 </div>
             </div>
-            <% } %>
-                <!-- <% if(novoUsuario) { %>
-                    <div class="cadastrosucesso">
-                        <div class="container">
-                            <h3>
-                                O e-mail <%= novoUsuario.email %> foi cadastrado com sucesso! <br><br>
-                                    Seja bem-vindo! <br> <br>
-                                    Clique no botão abaixo e comece agora a aproveitar a nossa plataforma
-                            </h3>
-                            <div>
-                                <a href="/login">Login</a>
-                            </div>
-                        </div>
-                    </div>
-                    <% } %> -->
     </main>
 
     <%- include('./partials/footer') %>

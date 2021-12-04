@@ -1,4 +1,7 @@
 const { validationResult } = require("express-validator");
+const { Sequelize, Usuario } = require("../models");
+const bcrypt = require("bcryptjs");
+const Op = Sequelize.Op;
 
 
 const principalController = {
@@ -38,19 +41,19 @@ const principalController = {
 		const novoUsuario = '';
 		res.render("cadastro-usuario", { novoUsuario });
 	},
-	cadastrar: function (req, res) {
+	cadastrar: async function (req, res) {
 		const errors = validationResult(req);
-		const novoUsuario = undefined;
+		console.log(errors)
 		if (!errors.isEmpty()) {
 			res.render("cadastro-usuario", {
 				errors: errors.mapped(),
 				old: req.body,
-				novoUsuario
 			});
 		} else {
 			const novoUsuario = req.body;
-			usuarios.push(novoUsuario);
-			res.render("cadastro-usuario", { novoUsuario });
+			novoUsuario.senha = bcrypt.hashSync(novoUsuario.senha, 10);
+			let usuarioCadastrado = await Usuario.create(novoUsuario);
+			return res.render("login");
 		}
 	},
 	telaContato: function (req, res) {
