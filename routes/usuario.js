@@ -12,5 +12,5 @@ router.get("/carrinho", authenticator, usuarioController.carrinho);
 router.get("/chat", authenticator, usuarioController.chat);
 router.get("/comprar", authenticator, usuarioController.comprar);
 router.get("/trocarsenha", authenticator, usuarioController.trocarSenha);
-
+router.get("/endereco",usuarioController.endereco);
 module.exports = router;

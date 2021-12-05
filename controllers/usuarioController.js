@@ -46,6 +46,10 @@ const usuarioController = {
 	trocarSenha: function (req, res) {
 		res.render("trocarsenha");
 	},
+
+	endereco: function (req, res) {
+		res.render("endereco");
+	},
 };
 
 module.exports = usuarioController;

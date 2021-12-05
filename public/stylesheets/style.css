@@ -2088,9 +2088,7 @@ main .pai-flexbox .wrapperboxbranco .containerdireito .botoes {
     display: flex;
     justify-content:right;
     flex-direction: row;
-    margin: 10px;
-
-    
+    margin: 10px;  
 }
 
 
