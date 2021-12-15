@@ -1,3 +1,7 @@
+const config = require("../database/config");
+const { Sequelize, DataTypes } = require("sequelize");
+const sequelize = new Sequelize(config);
+
 module.exports = (sequelize, datatypes) => {
     const Produto = sequelize.define ( "produto", {
 
@@ -43,7 +47,8 @@ module.exports = (sequelize, datatypes) => {
             type:Datatype.STRING,
             allowNull: false,
          },
-        /* foto_produto:*/ {
+        
+         foto_produto: {
             type:Datatype.STRING,
             allowNull: false,
          },
