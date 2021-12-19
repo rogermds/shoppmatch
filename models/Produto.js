@@ -2,59 +2,62 @@ const config = require("../database/config");
 const { Sequelize, DataTypes } = require("sequelize");
 const sequelize = new Sequelize(config);
 
-module.exports = (sequelize, datatypes) => {
-    const Produto = sequelize.define ( "produto", {
+module.exports = (sequelize, DataTypes) => {
+	const Produto = sequelize.define(
+		"Produto",
+		{
+			id_produto: {
+				type: DataTypes.INTEGER,
+				primaryKey: true,
+				autoIncrement: true,
+			},
 
-        id_produto: {
-            type:Datatypes.INTEGER,
-            primaryKey: true,
-            autoIncrement: true,
-          },
+			compra_venda: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			novo_usado: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			titulo: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			cor: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			tamanho: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			genero: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			preco_min: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			preco_max: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			descricao: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
 
-          compra_venda: {
-              type:Datatype.STRING,
-              allowNull:false,
-          },
-          novo_usado: {
-              type:Datatype.STRING,
-              allowNull: false,
-          },
-          titulo: {
-              type:Datatype.STRING,
-              allowNull: false,
-          },
-          cor:{
-            type:Datatype.STRING,
-            allowNull: false,
-         },
-         tamanho: {
-            type:Datatype.STRING,
-            allowNull: false,
-         },
-         genero: {
-            type:Datatype.STRING,
-            allowNull: false,
-         },
-         preco_min: {
-            type:Datatype.STRING,
-            allowNull: false,
-         },
-         preco_max: {
-            type:Datatype.STRING,
-            allowNull: false,
-         },
-         descricao: {
-            type:Datatype.STRING,
-            allowNull: false,
-         },
-        
-         foto_produto: {
-            type:Datatype.STRING,
-            allowNull: false,
-         },
-    },{
-        tableName:'produto',
-        timestamps: false
-    })
-
-}
+			foto_produto: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+		},
+		{
+			tableName: "produto",
+			timestamps: false,
+		}
+	);
+   return Produto
+};

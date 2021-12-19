@@ -4,46 +4,49 @@ const { Sequelize, DataTypes } = require("sequelize");
 const sequelize = new Sequelize(config);
 
 
-module.exports = (sequelize, datatypes) => {
-    const Endereco = sequelize.define ( "endereco", {
+module.exports = (sequelize, DataTypes) => {
+	const Endereco = sequelize.define(
+		"Endereco",
+		{
+			id_endereco: {
+				type: DataTypes.INTEGER,
+				primaryKey: true,
+				autoIncrement: false,
+			},
 
-        id_endereco: {
-            type:Datatypes.INTEGER,
-            primaryKey: true,
-            autoIncrement: false,
-          },
-
-          cep: {
-              type:Datatype.STRING,
-              allowNull:false,
-          },
-          rua: {
-              type:Datatype.STRING,
-              allowNull: false,
-          },
-          numero: {
-              type:Datatype.STRING,
-              allowNull: false,
-          },
-          bairro:{
-            type:Datatype.STRING,
-            allowNull: false,
-         },
-         complemento: {
-            type:Datatype.STRING,
-            allowNull: false,
-         },
-         cidade: {
-            type:Datatype.STRING,
-            allowNull: false,
-         },
-         estado: {
-            type:Datatype.STRING,
-            allowNull: false,
-         },
-    },{
-        tableName:'endereco',
-        timestamps: false
-    })
-
-}
+			cep: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			rua: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			numero: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			bairro: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			complemento: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			cidade: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			estado: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+		},
+		{
+			tableName: "endereco",
+			timestamps: false,
+		}
+	);
+    return Endereco
+};
