@@ -4,8 +4,8 @@ var principalController = require("../controllers/principalController.js");
 var validator = require("../middlewares/express-validator");
 
 router.get("/", principalController.index);
-router.get("/login", principalController.telaLogin);
-router.post("/login", principalController.login);
+router.get("/login", principalController.getLogin);
+router.post("/login", principalController.postLogin);
 router.get("/cadastrar", principalController.telaCadastro);
 router.post("/cadastrar", validator.validacoesCadastro,	principalController.cadastrar);
 router.get("/contato", principalController.telaContato);

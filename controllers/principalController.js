@@ -8,11 +8,11 @@ const principalController = {
 	index: function (req, res) {
 		res.render("home");
 	},
-	telaLogin: function (req, res) {
+	getLogin: function (req, res) {
 		req.session.destroy();
 		res.render("login");
 	},
-	login: function (req, res) {
+	postLogin: function (req, res) {
 		const { email, senha } = req.body;
 		const usuarioLogado = usuarios.find(
 			(usuario) => usuario.email == email && usuario.senha == senha
