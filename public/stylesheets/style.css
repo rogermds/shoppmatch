@@ -2045,9 +2045,9 @@ main .pai-flexbox .wrapperboxbranco .containerdireito .box{
 
 main .pai-flexbox .wrapperboxbranco .containerdireito .end {
 
-    color: white;
-  text-align: center;
-  font-size: 15px;
+color: white;
+text-align: center;
+font-size: 15px;
 margin-bottom: 40px;
 margin-top: 20px;
 
@@ -2162,7 +2162,404 @@ main .pai-flexbox .wrapperboxbranco .containerdireito .botaocontinuar1 .botao-co
     text-align: center;
     text-decoration: none;
     color:white;
+	font-size: 16px;
 
+}
+
+/*PEDIDOS*/
+
+main .pedidos {
+    
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+main .pedidos .wrapper-box {
+ margin: 50px;
+   border-radius: 30px;
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+    box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4)
+   
+ 
+    
+
+}
+
+main .pedidos .wrapper-box .titulopedido .titulopedido1 {
+
+    color: #656989;
+    font-size: 50px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+
+main .pedidos .wrapper-box .search input  {
+
+    width: 600px;
+    height: 30px;
+    align-items: center;
+    border-radius: 20px;
+    border: solid cornflowerblue 2px;
+    margin: 10px;
+    
+}
+
+main .pedidos .wrapper-box .meuspedidosbotao  {
+    border: cornflowerblue solid 2px;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+   
+
+}
+
+main .pedidos .wrapper-box .meuspedidosbotao .linkpedidos  {
+    text-decoration: none;
+    color: white;
+ }
+
+/*CAIXAS LARANJAS */
+
+main .pedidos .box-1 {
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    margin: 30px 30px;
+    border-radius:  40px ;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+    box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4)
+   
+    
+   
+}
+
+
+main .pedidos .box-2 {
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    margin: 30px 30px;
+    border-radius: 40px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+    box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4)
+   
+   
+}
+
+
+   
+main .pedidos .box-3 {
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    margin: 30px 30px;
+    border-radius: 40px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+    box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4)
+   
+}
+
+main .pedidos .box-4 {
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    margin: 30px 30px;
+    border-radius: 40px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+    box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4)
+   
+}
+
+main .pedidos .box-5 {
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    margin: 30px 30px;
+    border-radius: 40px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4);
+    box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.4)
+   
+   
+}
+
+
+/* IMAGENS PEDIDOS */
+
+main .pedidos .box-1 .boxphoto {
+
+    width: 200px;
+    height: 200px;
+    background-color: whitesmoke;
+ }
+ 
+ main .pedidos .box-1 .boxphoto img{
+     width: 200px;
+     height: 200px;
+ }
+ 
+ main .pedidos .box-2 .boxphoto img{
+     width: 200px;
+     height: 200px; 
+ 
+ }
+ 
+ main .pedidos .box-3 .boxphoto img{
+     width: 200px;
+     height: 200px; 
+ 
+ }
+ 
+ main .pedidos .box-4 .boxphoto img{
+     width: 200px;
+     height: 200px; 
+ 
+ }
+ 
+ main .pedidos .wrapper-box .box-5 .boxphoto img{
+     width: 200px;
+     height: 200px; 
+    
+ 
+ }
+ 
+
+
+/* CONTEUDO BOX TEXTO*/
+
+
+main .pedidos .wrapper-box .box-1 .textos .titulobox1 {
+
+padding-left: 50px;
+font-size: 20px;
+color: #656989;
+}
+
+main .pedidos .wrapper-box .box-1 .textos a {
+    text-decoration: none;
+}
+
+
+main .pedidos .wrapper-box .box-2 .textos .titulobox2 {
+
+    padding-left: 50px;
+    font-size: 20px;
+    color: #656989;
+
+
+}
+
+main .pedidos .wrapper-box .box-2 .textos a {
+    text-decoration: none;
+}
+
+main .pedidos .wrapper-box .box-3 .textos .titulobox3 {
+
+    padding-left: 50px;
+    font-size: 20px;
+    color: #656989;
+
+
+}
+
+main .pedidos .wrapper-box .box-3 .textos a {
+    text-decoration: none;
+}
+
+main .pedidos .wrapper-box .box-4 .textos .titulobox4 {
+
+    padding-left: 50px;
+    font-size: 20px;
+    color: #656989;
+
+
+}
+
+main .pedidos .wrapper-box .box-4 .textos a {
+    text-decoration: none;
+}
+
+main .pedidos .wrapper-box .box-5 .textos .titulobox5 {
+
+    padding-left: 50px;
+    font-size: 20px;
+    color: #656989;
+
+
+}
+
+main .pedidos .wrapper-box .box-5 .textos a {
+    text-decoration: none;
+}
+
+/* BOTÃO BOX */
+
+/*box 1*/
+
+main .pedidos .wrapper-box .box-1 .botaopedidos {
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+main .pedidos .wrapper-box .box-1 .botao-box1 {
+    border: cornflowerblue solid 2px;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+
+
+main .pedidos .wrapper-box .box-1 .botao-box1 .botaobox1 {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*box 2*/
+
+main .pedidos .wrapper-box .box-2 .botaopedidos {
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+main .pedidos .wrapper-box .box-2 .botao-box1 {
+    border: cornflowerblue solid 2px;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+
+
+main .pedidos .wrapper-box .box-2 .botao-box1 .botaobox1 {
+    color: white;
+    text-decoration: none;
+}
+
+/*box 3*/
+
+main .pedidos .wrapper-box .box-3 .botaopedidos {
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+main .pedidos .wrapper-box .box-3 .botao-box1 {
+    border: cornflowerblue solid 2px;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+main .pedidos .wrapper-box .box-3 .botao-box1 .botaobox1 {
+    color: white;
+    text-decoration: none;
+}
+
+/*box 4*/
+
+main .pedidos .wrapper-box .box-4 .botaopedidos {
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+main .pedidos .wrapper-box .box-4 .botao-box1 {
+    border: cornflowerblue solid 2px;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+main .pedidos .wrapper-box .box-4 .botao-box1 .botaobox1 {
+    color: white;
+    text-decoration: none;
+}
+
+/*box 5*/
+
+main .pedidos .wrapper-box .box-5 .botaopedidos {
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+main .pedidos .wrapper-box .box-5 .botao-box1 {
+    border: cornflowerblue solid 2px;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+main .pedidos .wrapper-box .box-5 .botao-box1 .botaobox1 {
+    color: white;
+    text-decoration: none;
 }
 
 /* FOOTER */
