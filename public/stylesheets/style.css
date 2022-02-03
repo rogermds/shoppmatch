@@ -2223,6 +2223,7 @@ main .pedidos .wrapper-box .meuspedidosbotao  {
     text-decoration: none;
     color: white;
     margin-bottom: 20px;
+	font-size: 15px;
    
 
 }
@@ -2345,12 +2346,19 @@ main .pedidos .box-1 .boxphoto {
 
 /* CONTEUDO BOX TEXTO*/
 
+.descricao p {
+
+	font-size: 15px;
+	margin: 20px;
+}
+
 
 main .pedidos .wrapper-box .box-1 .textos .titulobox1 {
 
 padding-left: 50px;
 font-size: 20px;
 color: #656989;
+margin-top: 15px;
 }
 
 main .pedidos .wrapper-box .box-1 .textos a {
@@ -2363,6 +2371,7 @@ main .pedidos .wrapper-box .box-2 .textos .titulobox2 {
     padding-left: 50px;
     font-size: 20px;
     color: #656989;
+	margin-top: 15px;
 
 
 }
@@ -2376,6 +2385,7 @@ main .pedidos .wrapper-box .box-3 .textos .titulobox3 {
     padding-left: 50px;
     font-size: 20px;
     color: #656989;
+	margin-top: 15px;
 
 
 }
@@ -2389,6 +2399,7 @@ main .pedidos .wrapper-box .box-4 .textos .titulobox4 {
     padding-left: 50px;
     font-size: 20px;
     color: #656989;
+	margin-top: 15px;
 
 
 }
@@ -2402,6 +2413,7 @@ main .pedidos .wrapper-box .box-5 .textos .titulobox5 {
     padding-left: 50px;
     font-size: 20px;
     color: #656989;
+	margin-top: 15px;
 
 
 }
@@ -2419,6 +2431,7 @@ main .pedidos .wrapper-box .box-1 .botaopedidos {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+	margin-left: 30px;
 }
 
 main .pedidos .wrapper-box .box-1 .botao-box1 {
@@ -2433,6 +2446,8 @@ main .pedidos .wrapper-box .box-1 .botao-box1 {
     color: white;
     margin-bottom: 20px;
     flex-direction: column;
+	font-size: 15px;
+
 
 }
 
@@ -2451,6 +2466,7 @@ main .pedidos .wrapper-box .box-2 .botaopedidos {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+	margin-left: 30px;
 }
 
 main .pedidos .wrapper-box .box-2 .botao-box1 {
@@ -2465,6 +2481,7 @@ main .pedidos .wrapper-box .box-2 .botao-box1 {
     color: white;
     margin-bottom: 20px;
     flex-direction: column;
+	font-size: 15px;
 
 }
 
@@ -2482,6 +2499,7 @@ main .pedidos .wrapper-box .box-3 .botaopedidos {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+	margin-left: 30px;
 }
 
 main .pedidos .wrapper-box .box-3 .botao-box1 {
@@ -2496,6 +2514,7 @@ main .pedidos .wrapper-box .box-3 .botao-box1 {
     color: white;
     margin-bottom: 20px;
     flex-direction: column;
+	font-size: 15px;
 
 }
 
@@ -2511,6 +2530,7 @@ main .pedidos .wrapper-box .box-4 .botaopedidos {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+	margin-left: 30px;
 }
 
 main .pedidos .wrapper-box .box-4 .botao-box1 {
@@ -2525,6 +2545,7 @@ main .pedidos .wrapper-box .box-4 .botao-box1 {
     color: white;
     margin-bottom: 20px;
     flex-direction: column;
+	font-size: 15px;
 
 }
 
@@ -2540,6 +2561,7 @@ main .pedidos .wrapper-box .box-5 .botaopedidos {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+	margin-left: 30px;
 }
 
 main .pedidos .wrapper-box .box-5 .botao-box1 {
@@ -2554,6 +2576,7 @@ main .pedidos .wrapper-box .box-5 .botao-box1 {
     color: white;
     margin-bottom: 20px;
     flex-direction: column;
+	font-size: 15px;
 
 }
 
