@@ -50,6 +50,10 @@ const usuarioController = {
 	endereco: function (req, res) {
 		res.render("endereco");
 	},
+
+	pedidos: function (req, res) {
+		res.render("pedidos");
+	},
 };
 
 module.exports = usuarioController;
